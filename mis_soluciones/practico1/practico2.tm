@@ -13,8 +13,8 @@
 
     <item><math|A=6a<rsup|2>> , <math|V=a<rsup|3>\<Leftrightarrow\>a=V<rsup|1/3>\<Rightarrow\>A=6V<rsup|2/3>>
 
-    <item>Encontrar el dominio de las funciones definidas por las siguientes
-    fórmulas:
+    <item>(<strong|Problema 1>)Encontrar el dominio de las funciones
+    definidas por las siguientes fórmulas:
 
     <\enumerate-alpha>
       <item><math|f<around*|(|x|)>=<sqrt|1-x<rsup|2>>> , <math|Dom
@@ -66,7 +66,8 @@
       </itemize-minus>
     </enumerate-alpha>
 
-    <item>Encontrar el Dominio e imagen de las siguientes funciones:
+    <item>(<strong|Problema 2>)Encontrar el Dominio e imagen de las
+    siguientes funciones:
 
     <\enumerate-alpha>
       <item><math|f<around*|(|x|)>=<frac|1|x+3>>
@@ -142,8 +143,8 @@
       </itemize-minus>
     </enumerate-alpha>
 
-    <item>Sea <math|f<around*|(|x|)>=1/<around*|(|1+x|)>>. Interprete los
-    siguiente:
+    <item>(<strong|Problema 3>)Sea <math|f<around*|(|x|)>=1/<around*|(|1+x|)>>.
+    Interprete los siguiente:
 
     <\enumerate-alpha>
       <item><math|f<around*|(|f<around*|(|x|)>|)>> Para cuales <math|x> tiene
@@ -182,7 +183,7 @@
       </itemize-minus>
     </enumerate-alpha>
 
-    <item>Sean <math|C<around*|(|x|)>=x<rsup|2>>,
+    <item>(<strong|Problema 4>)Sean <math|C<around*|(|x|)>=x<rsup|2>>,
     <math|H<around*|(|x|)>=<frac|1|x>> , <math|S<around*|(|x|)>=sen<around*|(|x|)>>
 
     <\enumerate-alpha>
@@ -244,7 +245,92 @@
 
     <math|<block|<tformat|<table|<row|<cell|x\<in\>A>|<cell|x\<in\>B>|<cell|x\<in\>A\<cup\>B=A+B-A\<cap\>B>|<cell|C<rsub|A\<cup\>B><around*|(|x|)>>|<cell|C<rsub|A><around*|(|x|)>+C<rsub|B><around*|(|x|)>-C<rsub|A><around*|(|x|)>C<rsub|B><around*|(|x|)>>>|<row|<cell|1>|<cell|1>|<cell|1>|<cell|1>|<cell|1+1-1.1>>|<row|<cell|0>|<cell|0>|<cell|0>|<cell|0>|<cell|0+0-0\<cdummy\>0>>|<row|<cell|1>|<cell|0>|<cell|1>|<cell|1>|<cell|1+0-1\<cdummy\>0>>|<row|<cell|0>|<cell|1>|<cell|1>|<cell|1>|<cell|0+1-0\<cdummy\>1>>>>>>
 
-    \;
+    <item>(<strong|Problema 5>) V o F. Es par si
+    <math|f<around*|(|x|)>=f<around*|(|-x|)>>, Es impar si:
+    <math|f<around*|(|-x|)>=-f<around*|(|x|)>>
+
+    <\enumerate-alpha>
+      <item><math|f<around*|(|x|)>=x<rsup|2>> es par
+
+      <\itemize-minus>
+        <item><math|f<around*|(|-x|)>=<around*|(|-x|)><rsup|2>=x<rsup|2>=f<around*|(|x|)>>
+        , Es par, V
+      </itemize-minus>
+
+      <item><math|f<around*|(|x|)>=x<rsup|3>> es impar
+
+      <\itemize-minus>
+        <item><math|f<around*|(|-x|)>=<around*|(|-x|)><rsup|3>=<around*|(|-x|)><around*|(|-x|)><rsup|2>=<around*|(|-x|)>x<rsup|2>=-x<rsup|3>=-f<around*|(|x|)>>
+        , Es impar , V
+      </itemize-minus>
+
+      <item>Si <math|f> no es impar entonces <math|f> es par: Esto es falso
+
+      <\itemize-minus>
+        <item><math|f<around*|(|x|)>=x+1> , <math|f<around*|(|-x|)>=-x+1> ,
+        Esto no es ni par ni impar
+      </itemize-minus>
+
+      <item>Si <math|f,g> son pares , entonces: <math|f+g> es par: Verdadero
+
+      <\itemize-minus>
+        <item><math|<around*|(|f+g|)><around*|(|x|)>=f<around*|(|x|)>+g*<around*|(|x|)>>
+
+        <item><math|<around*|(|f+g|)><around*|(|-x|)>=f<around*|(|-x|)>+g<around*|(|-x|)>=f<around*|(|x|)>+g<around*|(|x|)>=<around*|(|f+g|)><around*|(|x|)>>
+      </itemize-minus>
+    </enumerate-alpha>
+
+    <item>(Problema 6)\ 
+
+    <math|f<around*|(|x|)>=<around*|{|<tabular|<tformat|<table|<row|<cell|x+1>|<cell|0\<leqslant\>x\<less\>1>>|<row|<cell|-x+3>|<cell|1\<leqslant\>x\<leqslant\>4>>|<row|<cell|<frac|1|2>x-3>|<cell|4\<leqslant\>x\<leqslant\>6>>>>>|\<nobracket\>>>
+    , Graficar la funcion <math|g> donde:
+
+    <\enumerate-alpha>
+      <item><math|g(x) = f (x)>
+
+      <image|file:///home/fede/Pictures/Screenshots/Screenshot from
+      2024-09-04 14-48-23.png|0.5par|||>
+
+      <item><math|g<around*|(|x|)>=f<around*|(|x|)>-1>
+
+      <image|file:///home/fede/Pictures/Screenshots/Screenshot from
+      2024-09-04 14-58-37.png|0.5par|||>
+
+      <item><math|g<around*|(|x|)>=f<around*|(|x+2|)>>
+
+      <image|file:///home/fede/Pictures/Screenshots/Screenshot from
+      2024-09-04 15-00-20.png|0.5par|||>
+
+      <item><math|g<around*|(|x|)>=2*f<around*|(|x|)>>
+
+      <image|file:///home/fede/Pictures/Screenshots/Screenshot from
+      2024-09-04 15-01-50.png|0.5par|||>
+
+      <item><math|g<around*|(|x|)>=-f<around*|(|x|)>>
+
+      <image|file:///home/fede/Pictures/Screenshots/Screenshot from
+      2024-09-04 15-02-56.png|0.5par|||>
+
+      <item><math|g<around*|(|x|)>=f<around*|(|2x|)>>
+
+      <image|file:///home/fede/Pictures/Screenshots/Screenshot from
+      2024-09-04 15-04-28.png|0.5par|||>
+
+      <item><math|g<around*|(|x|)>=f<around*|(|<frac|1|2>x|)>>
+
+      <image|file:///home/fede/Pictures/Screenshots/Screenshot from
+      2024-09-04 15-05-46.png|0.5par|||>
+
+      <item><math|g<around*|(|x|)>=f<around*|(|-x|)>>
+
+      <image|file:///home/fede/Pictures/Screenshots/Screenshot from
+      2024-09-04 15-07-19.png|0.5par|||>
+
+      <item><math|g<around*|(|x|)>=<around*|\||f<around*|(|x|)>|\|>>
+
+      <image|file:///home/fede/Pictures/Screenshots/Screenshot from
+      2024-09-04 15-08-46.png|0.5par|||>
+    </enumerate-alpha>
   </enumerate-numeric>
 </body>
 
