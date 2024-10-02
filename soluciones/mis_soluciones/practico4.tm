@@ -54,7 +54,7 @@
       <item><math|lim<rsub|x\<rightarrow\>1><frac|1|x>=1>
 
       Aca utiliza el concepto de entorno, si me restrinjo a
-      <math|<around*|\||x-1|\|>\<less\><frac|1|2>\<Leftrightarrow\>-<frac|1|2>\<less\>x-1\<less\><frac|1|2>>
+      <math|<with|color|red|<around*|\||x-1|\|>\<less\><frac|1|2>>\<Leftrightarrow\>-<frac|1|2>\<less\>x-1\<less\><frac|1|2>>
 
       <math|<frac|1|2>\<less\>x\<less\><frac|3|2>\<Leftrightarrow\>2\<gtr\><frac|1|x>\<gtr\><frac|2|3>>
 
@@ -69,6 +69,83 @@
 
       <math|\<less\><around*|\||x-1|\|>6+<around*|\||<frac|1|x>-1|\|>\<less\><around*|\||x-1|\|>6+2<around*|\||x-1|\|>=8<around*|\||x-1|\|>\<less\>\<varepsilon\>\<Leftrightarrow\><around*|\||x-1|\|>\<leqslant\><frac|\<varepsilon\>|8>=\<delta\>>
     </enumerate-alpha>
+
+    <item>Demostrar por definicion los siguientes limites:
+
+    <\enumerate-alpha>
+      <item><math|lim<rsub|x\<rightarrow\>a>x=a>
+
+      <\itemize-minus>
+        <item><math|\<forall\>\<varepsilon\>\<gtr\>0,\<exists\>\<delta\>\<gtr\>0/<around*|\||f<around*|(|x|)>-a|\|>\<less\>0
+        si <around*|\||x-a|\|>\<less\>\<delta\>>
+
+        <item>Siempre empiezo escribiendo:
+        <math|<around*|\||f<around*|(|x|)>-a|\|>\<less\>\<varepsilon\>> y
+        desde alli trato de buscar la relacion existente entre
+        <math|\<varepsilon\>> y <math|\<delta\>>:
+
+        <item><math|<around*|\||x-a|\|>\<less\>\<varepsilon\>\<Rightarrow\>\<varepsilon\>=\<delta\>>
+      </itemize-minus>
+
+      <item><math|lim<rsub|x\<rightarrow\>a>c=c>
+
+      <\itemize-minus>
+        <item><math|<around*|\||c-c|\|>=0\<less\>\<varepsilon\>> sin importar
+        el <math|\<delta\>\<gtr\>0> que yo elija.\ 
+      </itemize-minus>
+
+      <item><math|lim<rsub|x\<rightarrow\>a>x<rsup|2>=a<rsup|2>>
+
+      <\itemize-minus>
+        <item>Arriba vimos que: <math|<around*|\||x+a|\|>\<leqslant\><around*|\||x|\|>+<around*|\||a|\|>\<less\>1+2<around*|\||a|\|>>
+
+        <item><math|<around*|\||x<rsup|2>-a<rsup|2>|\|>=<around*|\||<around*|(|x-a|)><around*|(|x+a|)>|\|>\<less\><around*|\||x-a|\|><around*|(|1+2<around*|\||a|\|>|)>\<less\>\<varepsilon\>\<Leftrightarrow\><around*|\||x-a|\|>\<less\><with|color|dark
+        green|<frac|\<varepsilon\>|<around*|\||1+2<around*|\||a|\|>|\|>>=\<delta\>>>
+      </itemize-minus>
+
+      <item><math|lim<rsub|x\<rightarrow\>a><sqrt|x>=<sqrt|a>>
+
+      <\itemize-minus>
+        <item><math|<around*|\||<sqrt|x>-<sqrt|a>|\|>=<around*|\||<frac|x-a|<sqrt|x>+<sqrt|a>>|\|>>
+
+        <item>Ahora usamos lo de restringirnos a un intervalo:
+        <math|<around*|\||x-a|\|>\<less\><frac|a|2>>
+
+        <item><math|-<frac|a|2>\<less\>x-a\<less\><frac|a|2>\<Leftrightarrow\><frac|a|2>\<less\>x\<less\><frac|3|2>a\<Leftrightarrow\><sqrt|<frac|a|2>>\<less\><sqrt|x>\<less\><sqrt|<frac|3a|2>>>
+
+        <item>Entones: <math|<sqrt|<frac|a|2>>+<sqrt|a>\<less\><sqrt|x>+<sqrt|a>\<Leftrightarrow\><frac|1|<sqrt|x>+<sqrt|a>>\<less\><frac|1|<sqrt|<frac|a|2>>+<sqrt|a>>>
+
+        <item><math|<around*|\||<frac|x-a|<sqrt|x>+<sqrt|a>>|\|>\<less\><frac|<around*|\||x-a|\|>|<around*|\||<sqrt|<frac|a|2>>+<sqrt|a>|\|>>\<less\>\<varepsilon\>\<Leftrightarrow\><with|color|dark
+        green|\<delta\>=\<varepsilon\><around*|\||<sqrt|<frac|a|2>>+<sqrt|a>|\|>>>
+        (No hace falta el modulo)
+      </itemize-minus>
+
+      <item><math|lim<rsub|x\<rightarrow\>a><frac|x<rsup|2>-a<rsup|2>|x-a>=2
+      a>
+
+      <\itemize-minus>
+        <item><math|<around*|\||<frac|x<rsup|2>-a<rsup|2>|x-a>-2a|\|>=<around*|\||<frac|x<rsup|2>-a<rsup|2>-2a
+        x+2a<rsup|2>|x-a>|\|>=<around*|\||<frac|<around*|(|x-a|)><rsup|2>|x-a>|\|>=<around*|\||x-a|\|>\<less\>\<varepsilon\>\<Rightarrow\><with|color|dark
+        green|\<delta\>=\<varepsilon\>>>
+      </itemize-minus>
+
+      <item><math|lim<rsub|x\<rightarrow\>0>x<rsup|2>sen<around*|(|<frac|1|x>|)>=0>
+
+      <\itemize-minus>
+        <item><math|<around*|\||sen<around*|(|x|)>|\|>\<less\>1>
+
+        <item><math|<around*|\||x<rsup|2>sen<around*|(|<frac|1|x>|)>-0|\|>\<less\><around*|\||x<rsup|2>|\|>
+        1=<around*|\||x|\|>\<less\><sqrt|\<varepsilon\>>=\<delta\>>
+
+        \;
+      </itemize-minus>
+    </enumerate-alpha>
+
+    <item>Calcular los siguientes limites, en el caso de existir justificar:
+
+    <\itemize-minus>
+      <item>
+    </itemize-minus>
   </enumerate-numeric>
 </body>
 
@@ -80,8 +157,8 @@
 
 <\references>
   <\collection>
-    <associate|auto-1|<tuple|1|1|../../../../.TeXmacs/texts/scratch/no_name_1.tm>>
-    <associate|auto-2|<tuple|2|?|../../../../.TeXmacs/texts/scratch/no_name_1.tm>>
+    <associate|auto-1|<tuple|1|1>>
+    <associate|auto-2|<tuple|2|1>>
   </collection>
 </references>
 
@@ -91,6 +168,10 @@
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|1<space|2spc>Definiciones>
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-1><vspace|0.5fn>
+
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|2<space|2spc>Ejercicios>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-2><vspace|0.5fn>
     </associate>
   </collection>
 </auxiliary>
