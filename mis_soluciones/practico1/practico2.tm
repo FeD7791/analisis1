@@ -331,6 +331,126 @@
       <image|file:///home/fede/Pictures/Screenshots/Screenshot from
       2024-09-04 15-08-46.png|0.5par|||>
     </enumerate-alpha>
+
+    <item>(Problema 7) Grafica, Dominio, Inyectiva, Suryectiva
+
+    <\enumerate-alpha>
+      <item><math|a<around*|(|t|)>=5 t-2>
+
+      <\itemize-minus>
+        <item><math|Dom a=\<bbb-R\>>
+
+        <item><math|a<around*|(|t<rsub|1>|)>=a<around*|(|t<rsub|2>|)>\<Rightarrow\>5
+        t<rsub|1>-2=5t<rsub|2>-2\<Rightarrow\>t<rsub|1>=t<rsub|2>>
+
+        <item>La funcion es Suryectiva
+      </itemize-minus>
+
+      <item>
+    </enumerate-alpha>
+
+    <item>(Problema 8) Si la funcion es biyectiva (inyectiva y suryectiva)
+    tiene inversa.
+
+    Un funcion es suryectiva si no hay valores prohibidos de <math|y> para la
+    funcion.
+
+    <\enumerate-alpha>
+      <item><math|f<around*|(|x|)>=-x<rsup|2>>
+
+      <\itemize-minus>
+        <item><math|y=-x<rsup|2>\<Rightarrow\>\<pm\><sqrt|-y>=x>
+
+        <item><math|Dom f=\<bbb-R\>>
+
+        <item>Lo anterior nos dice que: Im<math|f=<around*|{|y\<leqslant\>0|}>>
+
+        <item>Si me restrinjo al intervalo <math|<around*|[|0,1|]>> por
+        ejempolo, tendre que la funcion es inyectiva y suryectiva (Pues toma
+        todos los elementos de la imagen en ese intervalo)
+      </itemize-minus>
+
+      <item><math|f<around*|(|x|)>=<frac|1|x>>
+
+      <\itemize-minus>
+        <item><math|y=<frac|1|x>\<Leftrightarrow\>x=<frac|1|y>>\ 
+
+        <item><math|Dom f=\<bbb-R\>-<around*|{|0|}>>.
+        Im<math|f=\<bbb-R\>-<around*|{|0|}>>
+
+        <item>En este caso la funcion es claramente inyectiva
+
+        <item>Puedo definir nuevamente <math|<around*|[|1/4,1|]>>
+      </itemize-minus>
+    </enumerate-alpha>
+
+    <item>(Problema 9) Hallar la inversa e indicar su dominio
+
+    <\enumerate-alpha>
+      <item>
+
+      <item>
+
+      <item><math|f<around*|(|x|)>=<around*|{|<tabular|<tformat|<table|<row|<cell|x
+      si x\<in\>\<bbb-Q\>>>|<row|<cell|-x si
+      x\<nin\>\<bbb-Q\>>>>>>|\<nobracket\>>\<Rightarrow\>f<rsup|-1><around*|(|y|)>=<around*|{|<tabular|<tformat|<table|<row|<cell|y
+      si y\<in\>\<bbb-Q\>>>|<row|<cell|-y si
+      x\<nin\>\<bbb-Q\>>>>>>|\<nobracket\>>>
+
+      <item><math|f<around*|(|x|)>=<around*|{|<tabular|<tformat|<table|<row|<cell|<frac|1|2>x
+      si x\<less\>0>>|<row|<cell|2x si x\<geqslant\>0>>>>>|\<nobracket\>>>
+
+      <\itemize-minus>
+        <item>Primero, saca la imagen de <math|y> en cada intervalo:
+
+        <item><math|y=<frac|1|2>x\<Leftrightarrow\>x=2 y>, como
+        <math|x\<less\>0> luego Im f= <math|<around*|{|y/y\<less\>0|}>>
+
+        <item><math|y=2 x\<Leftrightarrow\>x=<frac|1|2>y>, Como
+        <math|x\<geqslant\>0\<Rightarrow\>Im f=<around*|{|y\<geqslant\>0|}>>
+
+        <item><math|f<rsup|-1><around*|(|y|)>=<around*|{|<tabular|<tformat|<table|<row|<cell|<frac|1|2>y
+        si y\<geqslant\>0>>|<row|<cell|2 y si y\<less\>0>>>>>|\<nobracket\>>>
+      </itemize-minus>
+
+      <item><math|f<around*|(|x|)>=<around*|{|<tabular|<tformat|<table|<row|<cell|-<frac|1|x-2>
+      si x\<neq\>2>>|<row|<cell|0 si x=2>>>>>|\<nobracket\>>>
+
+      <\itemize-minus>
+        <item><math|y=-<frac|1|x-2>\<Leftrightarrow\>x=-<frac|1|y>+2> ,
+        <math|Im f=\<bbb-R\>-<around*|{|0|}>>
+
+        <item><math|y=0\<Rightarrow\>Im f=0>
+
+        <item><math|f<rsup|-1><around*|(|y|)>=<around*|{|<tabular|<tformat|<table|<row|<cell|-<frac|1|y>+2,si
+        y\<in\>\<bbb-R\>-<around*|{|0|}>>>|<row|<cell|2 si y=0
+        >>>>>|\<nobracket\>>>
+      </itemize-minus>
+
+      <item><math|f<around*|(|x|)>=<around*|{|<tabular|<tformat|<table|<row|<cell|-x<rsup|2>
+      si \ x\<geqslant\>0>>|<row|<cell|1-x<rsup|3> si
+      \ x\<less\>0>>>>>|\<nobracket\>>>
+
+      <\itemize-minus>
+        <item><math|y=-x<rsup|2>\<Leftrightarrow\>x=\<pm\><sqrt|-y>>
+        <math|\<Rightarrow\>> <math|I m f=\<bbb-R\><rsub|\<leqslant\>0>> (Hay
+        que elegir un signo si no, esto no funciona) <math|x=<sqrt|-y>>
+
+        <item><math|y=1-x<rsup|3>\<Leftrightarrow\>x=<around*|(|1-y|)><rsup|1/3>\<Rightarrow\>
+        I m f=\<bbb-R\>>
+
+        <item>Como <math|1-x<rsup|3>> es impar, para <math|x\<less\>0>
+        tendriamos que: <math|1-x<rsup|3>\<gtr\>0>, entonces: <math|Im
+        f=\<bbb-R\><rsub|\<gtr\>1>>
+
+        <item><math|f<rsup|-1>=<around*|{|<tabular|<tformat|<table|<row|<cell|<sqrt|-y>
+        si y\<leqslant\>0>>|<row|<cell|<around*|(|1-y|)><rsup|1/3> si
+        y\<gtr\>1>>>>>|\<nobracket\>>>
+      </itemize-minus>
+    </enumerate-alpha>
+
+    <item><math|f<around*|(|x|)>\<less\>f<around*|(|x+1|)>\<Rightarrow\>>
+    Supongamos que existe
   </enumerate-numeric>
 </body>
 
