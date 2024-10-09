@@ -148,6 +148,12 @@
 
       <item><math|lim<rsub|x\<rightarrow\>2><frac|x<rsup|3>-8|x-2>=<frac|<around*|(|x-2|)><around*|(|x<rsup|2>+2x+4|)>|x-2>>
     </enumerate-alpha>
+
+    <item>
+
+    <item>
+
+    <item>
   </enumerate-numeric>
 </body>
 

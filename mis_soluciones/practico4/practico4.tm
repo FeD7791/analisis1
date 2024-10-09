@@ -173,6 +173,29 @@
 
     <\enumerate-alpha>
       <item>
+
+      <item>
+
+      <item>
+
+      <item>
+
+      <item>
+
+      <item>
+
+      <item><math|lim<rsub|x\<rightarrow\>2><around*|(|x<rsup|2>-<around*|[|x|]>|)>>
+
+      <\itemize-minus>
+        <item>Para ver si existe este limite fijarse si existe el limite de
+        <math|<around*|[|x|]>>
+
+        <item><math|lim<rsub|x\<rightarrow\>2<rsup|->><around*|[|x|]>=2>
+
+        <item><math|lim<rsub|x\<rightarrow\>2<rsup|+>><around*|[|x|]>=3>
+
+        <item>Conclusion el limite no existe.
+      </itemize-minus>
     </enumerate-alpha>
 
     <item>
@@ -217,7 +240,84 @@
 
     <item>
 
-    <item>
+    <item>Demostrar las siguientes afirmaciones:
+
+    <\enumerate-alpha>
+      <item><math|lim<rsub|x\<rightarrow\>3><frac|1|<around*|(|x-3|)><rsup|2>>=\<infty\>>
+      Usando la defnicion de limite.
+
+      <\itemize-minus>
+        <item>Si <math|<frac|1|<around*|(|x-3|)><rsup|2>>\<gtr\>M\<Leftrightarrow\><sqrt|<frac|1|M>>\<gtr\><around*|\||x-3|\|>\<Leftrightarrow\>\<delta\>=<sqrt|<frac|1|M>>>
+      </itemize-minus>
+
+      <item><math|lim<rsub|x\<rightarrow\>0>f<around*|(|x|)>=l\<Rightarrow\>lim<rsub|x\<rightarrow\>0>f<around*|(|x<rsup|3>|)>=lim<rsub|x\<rightarrow\>0>f<around*|(|x|)>>
+
+      <\itemize-minus>
+        <item><math|<around*|\||f<around*|(|x<rsup|3>|)>-l|\|>\<less\>\<varepsilon\>,<around*|\||x<rsup|3>-0|\|>\<less\>\<delta\>>
+
+        <item>Como: <math|<around*|\||f<around*|(|x|)>-l|\|>\<less\>\<varepsilon\>,<around*|\||x|\|>\<less\>\<delta\><rsub|1>\<Rightarrow\><around*|\||x|\|><rsup|3>\<less\>\<delta\><rsub|1><rsup|3>>
+        (Para ese <math|\<delta\>>)
+
+        <item>Entonces debo tomar: <math|\<delta\>=min<around*|(|\<delta\><rsub|1>,\<delta\><rsub|1><rsup|3>|)>>
+      </itemize-minus>
+
+      <item>Si <math|lim<rsub|x\<rightarrow\>0>f<around*|(|x<rsup|2>|)>=l>
+      entonces no necesariamente exite el limite para <math|f<around*|(|x|)>>
+
+      <\itemize-minus>
+        <item>Considere <math|f<around*|(|x|)>=<around*|{|<tabular|<tformat|<table|<row|<cell|1
+        si x\<less\>0>>|<row|<cell|-1 x\<geqslant\>0>>>>>|\<nobracket\>>>
+      </itemize-minus>
+
+      <item>Si <math|lim<rsub|x\<rightarrow\>0<rsup|+>>f<around*|(|1/x|)>=l\<Rightarrow\>lim<rsub|x\<rightarrow\>0<rsup|+>>f<around*|(|1/x|)>=lim<rsub|x\<rightarrow\>0<rsup|->>f<around*|(|x|)>>
+
+      <\itemize-minus>
+        <item><math|x-a\<less\>\<delta\>\<Rightarrow\><around*|\||f<around*|(|<frac|1|x>|)>-l|\|>\<less\>\<varepsilon\>>
+
+        <item>Considere entonces <math|y=<frac|1|x>>
+
+        <item><math|x-a\<less\>\<delta\>\<Leftrightarrow\>x\<less\>a+\<delta\>\<Leftrightarrow\><frac|1|x>\<gtr\><frac|1|a+\<delta\>>\<Leftrightarrow\><frac|1|a+\<delta\>>\<less\><frac|1|x>\<Rightarrow\><around*|\||f<around*|(|y|)>-l|\|>\<less\>\<varepsilon\>>
+
+        <item>Como <math|a=0> se facilitan las cosas:
+        <math|<frac|1|\<delta\>>\<less\>y>
+
+        <item>Aca consideraria que <math|\<delta\><rprime|'>=<frac|1|\<delta\>>>
+        y quedaria demostrado.
+      </itemize-minus>
+
+      <item><math|lim<rsub|x\<rightarrow\>0<rsup|+>>f<around*|(|x|)>=\<infty\>\<Leftrightarrow\>lim<rsub|x\<rightarrow\>\<infty\><rsup|->>f<around*|(|1/x|)>=\<infty\>>
+
+      <\itemize-minus>
+        <item><math|x-0\<less\>\<delta\>\<Rightarrow\>f<around*|(|x|)>\<gtr\>M>
+
+        <item><math|y=<frac|1|x>\<Rightarrow\><frac|1|\<delta\>>\<less\><frac|1|x>=y>
+
+        <item>Entonces: <math|f<around*|(|1/y|)>\<gtr\>M si
+        <frac|1|\<delta\>>\<less\>y>
+
+        <item>Es decir tomo <math|\<delta\><rprime|'>=<frac|1|\<delta\>>>
+
+        <item>Tienes que probar la vuelta
+      </itemize-minus>
+
+      <item>Existe <math|f:\<bbb-R\>\<rightarrow\>\<bbb-R\>> tal que
+      <math|lim<rsub|x\<rightarrow\>a>f<around*|(|x|)>> no existe para todo
+      <math|\<bbb-R\>>
+
+      <\itemize-minus>
+        <item>Considere: <math|f<around*|(|x|)>=<around*|{|<tabular|<tformat|<table|<row|<cell|1
+        x\<in\>\<bbb-Q\>>>|<row|<cell|0 x\<nin\>\<bbb-Q\>>>>>>|\<nobracket\>>>
+
+        <item>Suponga que el limite existe:
+
+        <item><math|<around*|\||f<around*|(|x|)>-l|\|>\<less\>\<varepsilon\>\<Rightarrow\>\<exists\>min<around*|(|<around*|\||1-l|\|>,<around*|\||0-l|\|>|)>>
+
+        <item>Por lo cual la distancia no puede ser mas chica que cierto
+        numero y esto imposibilita que valga para todo epsilon.
+
+        \;
+      </itemize-minus>
+    </enumerate-alpha>
 
     <item>
 

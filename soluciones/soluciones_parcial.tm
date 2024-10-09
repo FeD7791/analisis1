@@ -113,7 +113,7 @@
       <item>No voy a incluir al 1 porque, aunque se que
       <math|f<around*|(|1|)>=0>, el 0 es un valor asintotico para la funcion
       inversa. Solamente en el limite, cuando <math|y\<rightarrow\>0> obtengo
-      <math|y=1>
+      <math|x=1>
     </itemize-dot>
   </enumerate-alpha>
 

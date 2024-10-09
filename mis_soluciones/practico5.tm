@@ -39,6 +39,56 @@
     Si g : [a, b] \<rightarrow\> R es continua y g (a) \<less\> c \<less\> g
     (b), entonces existe \<alpha\> \<in\> (a, b) tal que g (\<alpha\>) = c.
   </corollary>
+
+  <\enumerate-numeric>
+    <item>
+
+    <item>Determinar en que puntos son continuas las siguientes funciones:
+
+    <\enumerate-alpha>
+      <item>Esta funcion no es continua en 0
+
+      <item>Esta funcion no es continua en <math|k\<in\>\<bbb-Z\>>
+
+      <\itemize-minus>
+        <item><math|lim<rsub|x\<rightarrow\>k<rsup|+>><around*|[|x|]>=k>
+
+        <item><math|lim<rsub|x\<rightarrow\>k<rsup|->><around*|[|x|]>=k-1>
+      </itemize-minus>
+
+      <item>Esta funcion ES continua en <math|x=0>
+
+      <item>
+
+      <item>
+
+      <item>No esta defninido <math|f<around*|(|0|)>>
+    </enumerate-alpha>
+
+    <item>
+
+    <\enumerate-alpha>
+      <item><math|<around*|\||f<around*|(|x|)>|\|>\<leqslant\><around*|\||x|\|>>
+
+      <\itemize-minus>
+        <item><math|-<around*|\||x|\|>\<less\>f<around*|(|x|)>\<less\><around*|\||x|\|>>
+
+        <item>Si tomo el limite de estas funciones obtengo:
+        <math|lim<rsub|x\<rightarrow\>0>-<around*|\||x|\|>\<leqslant\>lim<rsub|x\<rightarrow\>0>f<around*|(|x|)>\<leqslant\>lim<rsub|x\<rightarrow\>0><around*|\||x|\|>>
+
+        <item>De manera que: <math|lim<rsub|x\<rightarrow\>0>f<around*|(|x|)>=0>
+      </itemize-minus>
+
+      <item>Lo demostramos por definicion:
+
+      <\itemize-minus>
+        <item><math|<around*|\||f<around*|(|x|)>|\|>\<leqslant\><around*|\||g<around*|(|x|)>-g<around*|(|0|)>|\|>\<less\>\<varepsilon\>
+        si <around*|\||x-0|\|>\<less\>\<delta\>>
+
+        <item>Claramente si <math|<around*|\||x-0|\|>\<less\>\<delta\>\<Rightarrow\><around*|\||f<around*|(|x|)>|\|>\<less\>\<varepsilon\>>
+      </itemize-minus>
+    </enumerate-alpha>
+  </enumerate-numeric>
 </body>
 
 <\initial>
@@ -49,7 +99,7 @@
 
 <\references>
   <\collection>
-    <associate|auto-1|<tuple|1|1|../../../.TeXmacs/texts/scratch/no_name_2.tm>>
+    <associate|auto-1|<tuple|1|1>>
   </collection>
 </references>
 
