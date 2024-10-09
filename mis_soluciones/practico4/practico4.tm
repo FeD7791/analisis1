@@ -8,9 +8,37 @@
   <section|Definiciones>
 
   <\itemize-dot>
-    <item>Definicion de Funciones:\ 
+    <item>Definicion de limite de Funciones:\ 
 
     <math|lim<rsub|x\<rightarrow\>a>f<around*|(|x|)>=l\<Leftrightarrow\>\<forall\>\<varepsilon\>\<gtr\>0,\<exists\>\<delta\>\<gtr\>0/0\<less\><around*|\||x-a|\|>\<less\>\<delta\>\<Rightarrow\><around*|\||f<around*|(|x|)>-l|\|>\<less\>\<varepsilon\>>
+
+    <item>Definicion limite al infinito: <math|lim<rsub|x\<rightarrow\>\<infty\>>f<around*|(|x|)>=l>
+
+    <math|\<forall\>\<varepsilon\>\<gtr\>0, \<exists\>N/si
+    N<with|color|red|\<less\>>x\<Rightarrow\><around*|\||f<around*|(|x|)>-l|\|>\<less\>\<varepsilon\>>
+
+    <item>Definicion limie a - infinito: <math|lim<rsub|x\<rightarrow\>\<infty\>>f<around*|(|x|)>=l>
+
+    <math|\<forall\>\<varepsilon\>\<gtr\>0, \<exists\>N/si
+    N<with|color|red|\<gtr\>>x\<Rightarrow\><around*|\||f<around*|(|x|)>-l|\|>\<less\>\<varepsilon\>>
+
+    <item>Limite que tiene a infinito:
+
+    <math|\<forall\>M,\<exists\>\<delta\>\<gtr\>0/0\<less\><around*|\||x-a|\|>\<less\>\<delta\>\<Rightarrow\>f<around*|(|x|)><with|color|red|\<gtr\>>M>
+
+    <item>Limite que tiene a - infinito
+
+    <math|\<forall\>M,\<exists\>\<delta\>\<gtr\>0/0\<less\><around*|\||x-a|\|>\<less\>\<delta\>\<Rightarrow\>f<around*|(|x|)><with|color|red|\<less\>>M>
+
+    <item>Teorema de limite de sucesiones con limite de funciones: Sea
+    <math|f:A-<around*|{|a|}>> (El dominio de <math|f> no contiene al punto
+    <math|a>) entonces:
+
+    <math|lim<rsub|x\<rightarrow\>a>f<around*|(|x|)>=l\<Leftrightarrow\>lim<rsub|n\<rightarrow\>\<infty\>>f<around*|(|x<rsub|n>|)>=l>
+    , para esta sucesion se cumple que: <math|lim<rsub|n\<rightarrow\>\<infty\>>x<rsub|n>=a>
+
+    Este teorema es la mejor herramienta para demostrar que un limite no
+    existe.
   </itemize-dot>
 
   <section|Ejercicios>
@@ -143,9 +171,134 @@
 
     <item>Calcular los siguientes limites, en el caso de existir justificar:
 
-    <\itemize-minus>
+    <\enumerate-alpha>
       <item>
-    </itemize-minus>
+    </enumerate-alpha>
+
+    <item>
+
+    <item>Demostrar por definición que no existen los siguientes limites.
+
+    <\enumerate-alpha>
+      <item><math|lim<rsub|x\<rightarrow\>0><frac|1|x>=No existe>\ 
+
+      <\itemize-minus>
+        <item><math|>Considere dos sucesiones:
+        <math|x<rsub|n>=<frac|1|n<around*|(|-1|)><rsup|2n>>> ,
+        <math|z<rsub|n>=<frac|1|n<around*|(|-1|)><rsup|2n-1>>>
+
+        <item>Claramente: si <math|n\<rightarrow\>\<infty\>> luego:
+        <math|x<rsub|n>,z<rsub|n>\<rightarrow\>0>
+
+        <item>Por otro lado: <math|lim<rsub|n\<rightarrow\>\<infty\>><frac|1|x<rsub|n>>=\<infty\>>
+        , <math|lim<rsub|n\<rightarrow\>\<infty\>><frac|1|z<rsub|n>>=-\<infty\>>
+      </itemize-minus>
+
+      <item><math|lim<rsub|x\<rightarrow\>0>sen<around*|(|<frac|1|x>|)>=No
+      existe>
+
+      <\itemize-minus>
+        \;
+
+        <item>Considero: <math|x<rsub|n>=<frac|1|<frac|\<pi\>|2>+<frac|4\<pi\>n|2>>=<frac|2|\<pi\><around*|(|1+4n|)>>>
+        , <math|z<rsub|n>=<frac|1|<frac|3\<pi\>|2>+<frac|4\<pi\>n|2>>=<frac|2|\<pi\><around*|(|3+4n|)>>>
+
+        <item>Veamos que: <math|lim<rsub|n\<rightarrow\>\<infty\>>x<rsub|n>,z<rsub|n>=0>
+        , lo cual es algo requerido.
+
+        <item>Sin embargo: <math|sen<around*|(|<frac|1|x<rsub|n>>|)>=sen<around*|(|<frac|\<pi\>|2><around*|(|1+4n|)>|)>=1>
+
+        <item>Mientra que: <math|sen<around*|(|<frac|1|z<rsub|n>>|)>=sen<around*|(|<frac|\<pi\>|2><around*|(|3+4n|)>|)>=-1>
+
+        <item>La funcion compuesta con la sucesion tiende a limites
+        distintos.
+      </itemize-minus>
+    </enumerate-alpha>
+
+    <item>
+
+    <item>
+
+    <item>
+
+    <item>Decir si las siguientes afirmaciones son verdaderas o falsas:
+
+    <\enumerate-alpha>
+      <item><math|lim<rsub|x\<rightarrow\>0<rsup|->>f<around*|(|x|)>=lim<rsub|x\<rightarrow\>0<rsup|+>>f<around*|(|-x|)>>
+      <with|color|red|(Verdadero)>
+
+      <\itemize-minus>
+        <item>Basicamente pregunta si es lo mismo el limite por la izquierda
+        de <math|f<around*|(|x|)>> que el limite por la derecha de
+        <math|f<around*|(|-x|)>>
+
+        <item><math|<around*|\||x-a|\|>\<less\>\<delta\>\<Rightarrow\>-\<delta\>\<less\>x-a\<less\>\<delta\>\<Leftrightarrow\>a-\<delta\>\<less\>x\<less\>a+\<delta\>>
+
+        <item><math|lim<rsub|x\<rightarrow\>0<rsup|->>f<around*|(|x|)>=l\<Rightarrow\>\<forall\>\<varepsilon\>\<gtr\>0,\<exists\>\<delta\>\<gtr\>0/-\<delta\>\<less\>x-a\<Rightarrow\><around*|\||f<around*|(|x|)>-l|\|>\<less\>\<varepsilon\>>
+
+        <item>Podria decirse que: <math|x\<gtr\>a-\<delta\>>
+
+        <item>Supongamos que se cumple esto, hagamos un cambio de variable:
+        <math|x=-y>
+
+        <item><math|><math|a-\<delta\>\<less\>x\<less\>a+\<delta\>\<Rightarrow\>a-\<delta\>\<less\>-y\<less\>a+\<delta\>\<Leftrightarrow\>-<around*|(|a-\<delta\>|)>\<gtr\>y\<gtr\>-<around*|(|a+\<delta\>|)>>
+
+        <item>Como aca <math|a=0> tenemos:
+        <math|\<delta\>\<gtr\>y\<gtr\>-\<delta\>\<Leftrightarrow\><around*|\||y|\|>\<less\>\<delta\>\<Rightarrow\><around*|\||f<around*|(|-y|)>-l|\|>\<less\>\<varepsilon\>>
+      </itemize-minus>
+
+      <item>Si los limites de <math|f<around*|(|x|)>>,
+      <math|g*<around*|(|x|)>> no existen entonces el limite de
+      <math|f<around*|(|x|)>+g<around*|(|x|)>> no existe. (Falso)
+
+      <\itemize-minus>
+        <item><math|f<around*|(|x|)>=<frac|1|x>> ,
+        <math|g<around*|(|x|)>=1-<frac|1|x>> , sus limites no existen.
+
+        <item><math|f<around*|(|x|)>+g<around*|(|x|)>=1>
+      </itemize-minus>
+
+      <item><math|lim<rsub|x\<rightarrow\>0>g<around*|(|x|)>=0\<Rightarrow\>lim<rsub|x\<rightarrow\>0>g<around*|(|x|)>sen<around*|(|<frac|1|x>|)>=0>
+      (Verdadero)
+
+      <\itemize-minus>
+        <item><math|<around*|\||g<around*|(|x|)>sen<around*|(|<frac|1|x>|)>|\|>=<around*|\||g<around*|(|x|)>|\|>>
+        <math|<around*|\||sen<around*|(|<frac|1|x>|)>|\|>\<leqslant\><around*|\||g<around*|(|x|)>-0|\|>\<less\>\<varepsilon\>>
+        cuando <math|<around*|\||x-0|\|>\<less\>\<delta\>>
+      </itemize-minus>
+
+      <item><math|lim<rsub|x\<rightarrow\>0>
+      <around*|\||f<around*|(|x|)>|\|>=0\<Rightarrow\>lim<rsub|x\<rightarrow\>a>f<around*|(|x|)>=0>
+      (Verdadero)
+
+      <\itemize-minus>
+        <item><math|<around*|\||<around*|\||f<around*|(|x|)>|\|>-0|\|>\<less\>\<varepsilon\>
+        si <around*|\||x-0|\|>\<less\>\<delta\>>
+
+        <item><around*|\||<math|<around*|\||f<around*|(|x|)>-0|\|>>|\|><math|=<around*|\||f<around*|(|x|)>|\|>\<less\>\<varepsilon\>
+        si <around*|\||x|\|>\<less\>\<delta\>>
+      </itemize-minus>
+
+      <item><math|lim<rsub|x\<rightarrow\>a>f<around*|(|x|)>=l\<Rightarrow\>lim<rsub|h\<rightarrow\>0>f<around*|(|a+h|)>>
+
+      <\itemize-minus>
+        <item><math|<around*|\||f<around*|(|x|)>-l|\|>\<less\>\<varepsilon\>
+        si <around*|\||x-a|\|>\<less\>\<delta\>>
+
+        <item>Tomo <math|x=a+h>
+
+        <item><math|<around*|\||f<around*|(|a+h|)>-l|\|>\<less\>\<varepsilon\>
+        si <around*|\||a+h-a|\|>=<around*|\||h|\|>\<less\>\<delta\>>
+
+        <item>Puede pensarse como una composicion:
+        <math|g<around*|(|h|)>=a+h\<Rightarrow\>lim<rsub|h\<rightarrow\>0>g<around*|(|h|)>=a>
+
+        <item><math|<around*|\||a+h|\|>\<less\>\<varepsilon\>,si
+        <around*|\||h-0|\|>\<less\>\<delta\>>
+
+        <item><math|lim<rsub|h\<rightarrow\>0>f<around*|(|g<around*|(|a+h|)>|)>=l>
+      </itemize-minus>
+    </enumerate-alpha>
   </enumerate-numeric>
 </body>
 
