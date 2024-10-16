@@ -319,7 +319,34 @@
       </itemize-minus>
     </enumerate-alpha>
 
-    <item>
+    <item>Calcular los siguientes limites:\ 
+
+    <\itemize-minus>
+      <item><math|lim<rsub|x\<rightarrow\>0><frac|2 x|sen
+      <around*|(|3x|)>>=lim<rsub|x\<rightarrow\>0><frac|2|3><frac|3x|sen<around*|(|3x|)>>=<frac|2|3>>
+
+      <item><math|lim<rsub|x\<rightarrow\>0><frac|sen<rsup|2><around*|(|2x|)>|x>=lim<rsub|x\<rightarrow\>0><frac|4x|1><around*|(|<frac|sen<around*|(|2x|)>|2x>|)><rsup|2>=0>
+
+      <item><math|lim<rsub|x\<rightarrow\><frac|\<pi\>|2>><frac|<frac|\<pi\>|2>-x|cos<around*|(|x|)>>\<Rightarrow\>y=<frac|\<pi\>|2>-x\<Rightarrow\>y\<rightarrow\>0
+      cuando x\<rightarrow\><frac|\<pi\>|2>>
+
+      <math|lim<rsub|y\<rightarrow\>0><frac|y|cos<around*|(|<frac|\<pi\>|2>-y|)>>>
+      aca <math|cos<around*|(|<frac|\<pi\>|2>-y|)>=cos<frac|\<pi\>|2>cos
+      y-sen<around*|(|<frac|\<pi\>|2>|)><around*|(|-sen y|)>>
+
+      <math|lim<rsub|y\<rightarrow\>0><frac|y|sen<around*|(|y|)>>=1>
+
+      <item><math|lim<rsub|x\<rightarrow\>0><frac|1-cos<around*|(|x|)>|x>=>
+
+      <math|cos<around*|(|2x|)>=cos<rsup|2><around*|(|x|)>-sen<rsup|2><around*|(|x|)>\<Rightarrow\>cos<around*|(|x|)>=cos<rsup|2><around*|(|x/2|)>-sen<rsup|2><around*|(|x/2|)>=1-2sen<rsup|2><around*|(|x/2|)>>
+
+      <math|lim<rsub|x\<rightarrow\>0><frac|sen<rsup|2><around*|(|x/2|)>|x<rsup|2>/4><frac|x|4>=0>
+
+      <item><math|lim<rsub|x\<rightarrow\>1><frac|sen<around*|(|x<rsup|2>-1|)>|x-1>=lim<rsub|x\<rightarrow\>1><frac|<around*|(|x+1|)>|1><frac|sen<around*|(|x<rsup|2>-1|)>|x<rsup|2>-1>>
+
+      Cambio de variable: <math|y=x<rsup|2>-1> , <math|y\<rightarrow\>0>
+      cuando <math|x\<rightarrow\>1>
+    </itemize-minus>
 
     <item>Decir si las siguientes afirmaciones son verdaderas o falsas:
 
