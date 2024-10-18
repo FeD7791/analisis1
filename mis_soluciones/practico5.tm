@@ -566,17 +566,27 @@
       </itemize-minus>
     </enumerate-alpha>
 
-    <item><with|color|red|<math|f:<around*|[|0,1|]>\<rightarrow\><around*|[|0,1|]>>
+    <item><with|color|black|<math|f:<around*|[|0,1|]>\<rightarrow\><around*|[|0,1|]>>
     mostrar que si <math|f> es continua, entonces
     <math|\<exists\>a\<in\><around*|[|0,1|]>> tal que
     <math|f<around*|(|a|)>=a>>
 
     <\itemize-minus>
-      <item>Si <math|f> fuera una funcion constante entonces esto queda
-      inmediatamente demostrado dado que <math|f<around*|(|x|)>\<in\><around*|[|0,1|]>>\ 
+      <item>Si se sucede <math|f<around*|(|0|)>=0> o bien
+      <math|f<around*|(|1|)>=1> esto queda brobado
 
-      <item>Entonces supongo que no es constante. Considere
-      <math|h<around*|(|x|)>=f<around*|(|x|)>-a>
+      <item>Entones suponemos <math|f<around*|(|0|)>\<gtr\>0> y
+      <math|f<around*|(|1|)>\<less\>1> podemos suponer lo puesto tambien.
+
+      <item>Si define la funcion <math|h<around*|(|x|)>=x-f<around*|(|x|)>>
+      observe que:
+
+      <math|h<around*|(|0|)>=0-f<around*|(|0|)>\<less\>0>
+
+      <math|h<around*|(|1|)>=1-f<around*|(|1|)>\<gtr\>0>
+
+      <item>Use el corolario 6 para decir que existe
+      <math|\<alpha\>/h<around*|(|\<alpha\>|)>=0=\<alpha\>-f<around*|(|\<alpha\>|)>\<Leftrightarrow\>\<alpha\>=f<around*|(|\<alpha\>|)>>
     </itemize-minus>
 
     <item>El monje sale y regresa a la misma hora todos los dias, ese lapso
@@ -610,7 +620,44 @@
       mismo punto: <math|f<around*|(|\<alpha\>|)>=g<around*|(|\<alpha\>|)>>
     </itemize-minus>
 
-    <item>
+    <item>Sea <math|f> definida y continua en todo <math|\<bbb-R\>>,
+    supongamos que <math|f> es siempre positiva y que
+    <math|lim<rsub|x\<rightarrow\>\<infty\><rsup|->>f<around*|(|x|)>=0=lim<rsub|x\<rightarrow\>-\<infty\><rsup|+>>f<around*|(|x|)>>,
+    entonces existe <math|x<rsub|0>> tal que
+    <math|f<around*|(|x<rsub|0>|)>\<geqslant\>f<around*|(|x|)> \<forall\>x>
+
+    <\itemize-minus>
+      <item>El problema nos esta hablando de una funcion que alcanza un valor
+      maximo.
+
+      <item>Por definicion de limite infinito: <math|si
+      N<rsub|1>\<less\>x\<Rightarrow\><around*|\||f<around*|(|x|)>-0|\|>\<less\>\<varepsilon\><rsub|1>>
+
+      <item>De la misma forma: si <math|x\<less\>N<rsub|2>\<Rightarrow\><around*|\||f<around*|(|x|)>-0|\|>\<less\>\<varepsilon\><rsub|2>>
+
+      <item>Sea <math|\<varepsilon\>=max<around*|(|\<varepsilon\><rsub|1>,\<varepsilon\><rsub|2>|)>>
+      esto nos asegura que: si <math|N<rsub|1>\<less\>x\<Rightarrow\><around*|\||f<around*|(|x|)>|\|>\<less\>\<varepsilon\>>
+      y si <math|x\<less\>N<rsub|2>\<Rightarrow\><around*|\||f<around*|(|x|)>|\|>\<less\>\<varepsilon\>>
+
+      <item>Como <math|f> es continua en <math|\<bbb-R\>> ,
+      <math|\<exists\>\<alpha\>/f<around*|(|\<alpha\>|)>=\<varepsilon\>>.
+
+      <item>De manera que puede decir que:
+      <math|f<around*|(|x|)>\<leqslant\><around*|\||f<around*|(|x|)>|\|>\<less\>f<around*|(|\<alpha\>|)>>
+      tanto, en el intervalo: <math|<around*|(|-\<infty\>,N<rsub|2>|)>> y en
+      el intervalo <math|<around*|(|N<rsub|1>,\<infty\>|)>>
+
+      <item>Falta ver nada mas que sucede en el intervalo:
+      <math|<around*|[|N<rsub|2>,N<rsub|1>|]>> (Podria ser que se encuentra
+      algun valor mayor)
+
+      <item>Segun el teorema 9 (Tercer teorema fuerte) , en un intervalo
+      cerrado donde la funcion <math|f> es continua, esta alcanza un maximo.
+      De manera que <math|\<exists\>f<around*|(|\<beta\>|)>\<geqslant\>f<around*|(|x|)>\<forall\>x\<in\><around*|[|N<rsub|2>,N<rsub|1>|]>>
+
+      <item>Entonces basta tomar el mas grande entre
+      <math|f<around*|(|\<alpha\>|)>> y <math|f<around*|(|\<beta\>|)>>
+    </itemize-minus>
 
     <item>
 
@@ -684,6 +731,42 @@
         <item><math|f<around*|(|x|)>=<around*|{|<tabular|<tformat|<table|<row|<cell|x
         si x\<in\><around*|[|a,b|]>>>|<row|<cell|-x si
         x\<nin\><around*|[|a,b|]>>>>>>|\<nobracket\>>>
+
+        <item>La unica regla es que a intervalos tengamos alguna de estas
+        funciones.
+      </itemize-minus>
+
+      <item>Si <math|f,g> son funciones continuas con
+      <math|g<around*|(|x|)>\<neq\>0> <math|\<forall\>x> y si
+      <math|f<rsup|2>=g<rsup|2>>, probar que <math|f=g> o <math|f=-g>
+
+      <\itemize-minus>
+        <item>Defina <math|h<around*|(|x|)>=x<frac|f<around*|(|x|)>|g<around*|(|x|)>>>
+
+        <item>Las funciones <math|f,g> satisfacen las condiciones del inciso
+        a. Tambien de hecho <math|h> lo hace y esto es lo mas importante:
+
+        <math|h<rsup|2><around*|(|x|)>=x<rsup|2>> , debido a que
+        <math|f<rsup|2>=g<rsup|2>>\ 
+
+        <item>Como <math|h<rsup|2>=x<rsup|2>> recaemos en <math|a> por lo
+        cual ya sabemos que <math|h> vale una de 4 opciones:
+
+        <math|h=x,h=-x,h=-<around*|\||x|\|>,h=<around*|\||x|\|>>
+
+        <item>Ahora tenemos que examinar cada uno de estos casos:
+
+        <math|h=x\<Rightarrow\>f/g=1\<Rightarrow\>f=g>
+
+        <math|h=-x\<Rightarrow\>f/g=-1\<Rightarrow\>f=-g>
+
+        <math|h=<around*|\||x|\|>\<Rightarrow\><around*|\||x|\|>=x
+        f/g\<Leftrightarrow\><around*|\||x|\|>/x=f/g> de manera que
+        <math|f/g> no es continua en <math|x=0> lo cual contradice la
+        hipotesis <math|<around*|[|f/g es continua \<forall\>x,porque
+        g<around*|(|x|)>\<neq\>0 \<forall\>x y f,g son continuas|]>>
+
+        Lo mismo sucede si <math|h=-<around*|\||x|\|>>
       </itemize-minus>
     </enumerate-alpha>
   </enumerate-numeric>
