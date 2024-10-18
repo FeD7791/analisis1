@@ -524,6 +524,14 @@
       <item><with|color|red|Demostrar que en el plano, el area de
       interseccion entre el area del circulo y la del cuadrado es 1.337>
 
+      <\itemize-minus>
+        <item>El area del cuadrado <math|A<rsub|sq>=x<rsup|2>>
+
+        <item>El areaa del circulo:<math|A<rsub|c>=\<pi\>r<rsup|2>=\<pi\><sqrt|x<rsup|2>+y<rsup|2>>>
+
+        <item>Funcion interseccion: <math|F=\<pi\><sqrt|x<rsup|2>+y<rsup|2>>-k<rsup|2>>
+      </itemize-minus>
+
       \ 
     </enumerate-alpha>
 
@@ -534,7 +542,9 @@
       alcanza un minimo.
 
       <\itemize-minus>
-        <item>Verdadero, version para el minimo del teorema 9
+        <item>Falso, no se olvide de la funcion <math|f=1/x>\ 
+
+        <item>Para que esto se cumpla se requiere un intervalo cerrado.
       </itemize-minus>
 
       <item>Si <math|<around*|\||f|\|>> es continua en <math|a> entonces
@@ -573,7 +583,7 @@
 
     <\itemize-minus>
       <item>Si se sucede <math|f<around*|(|0|)>=0> o bien
-      <math|f<around*|(|1|)>=1> esto queda brobado
+      <math|f<around*|(|1|)>=1> esto queda probado
 
       <item>Entones suponemos <math|f<around*|(|0|)>\<gtr\>0> y
       <math|f<around*|(|1|)>\<less\>1> podemos suponer lo puesto tambien.
