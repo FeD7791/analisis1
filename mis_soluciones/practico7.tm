@@ -263,7 +263,8 @@
       </itemize-minus>
     </enumerate-alpha>
 
-    <item>
+    <item>En cada uno de los siguientes casos encontrar la recta tangente al
+    punto indicado.
 
     <item>Graficar las siguientes funciones:
 
@@ -276,14 +277,46 @@
 
       <item>
 
-      <item><math|f<around*|(|x|)>=x<rsup|2><around*|(|x-2|)><rsup|2>>
+      <item><math|f<around*|(|x|)>=x<rsup|2><around*|(|x-2|)><rsup|2>=x<rsup|2><around*|(|x<rsup|2>-2
+      x+4|)>=x<rsup|4>-2x<rsup|3>+4x<rsup|2>>
 
       <\itemize-minus>
-        <item><math|x=0> , <math|x=2> son raices de esta funcion.
+        <item><math|x=0> , <math|x=2> son raices de esta funcion.\ 
+
+        <item>Hay puntos criticos o puntos donde no exista la derviada?
+        \ <math|>
+
+        <item><math|f<rprime|'><around*|(|x|)>=4x<rsup|3>-6x<rsup|2>+8x\<Rightarrow\>f<around*|(|0|)>=0>
+
+        <math|f<rprime|'><around*|(|x|)>=2x<around*|(|2x<rsup|2>-3x+4|)>>
+        Usar baskara y encontrar el otro
+
+        <item>Esto nos divide el dominio varios intervalos donde tendremo ver
+        en que lugares la derivada es creciente o decreciente. Despues hay
+        que examinar los limites.
       </itemize-minus>
     </enumerate-alpha>
 
     <item>
+
+    <\enumerate-alpha>
+      <item>
+
+      <item>
+
+      <item>
+
+      <item>
+
+      <item>
+
+      <item><math|lim<rsub|x\<rightarrow\>0><frac|arcsen<around*|(|x|)>|sen<around*|(|x|)>>=<frac|0|0>>,
+      puede aplicar l'Hopital
+
+      <\itemize-minus>
+        <item><math|lim<rsub|x\<rightarrow\>0><frac|<frac|1|<sqrt|1-x<rsup|2>>>|cos<around*|(|x|)>>=1>
+      </itemize-minus>
+    </enumerate-alpha>
 
     <item>Sean <math|f,g:I\<rightarrow\>R> funciones derivables en todo punto
     del intervalo <math|I>, sea <math|a\<in\>I>.\ 
@@ -384,52 +417,93 @@
       <math|p<rprime|''><around*|(|a|)>\<neq\>0>
 
       <\itemize-minus>
-        <item><math|p<rprime|'><around*|(|x|)>=n<around*|(|x-a|)><rsup|n-1>q<around*|(|x|)>+<around*|(|x-a|)><rsup|n>q<rprime|'><around*|(|x|)>>
-
-        <item><math|p<rprime|''><around*|(|x|)>=n<around*|(|n-1|)><around*|(|x-a|)><rsup|n-2>q<around*|(|x|)>+n<around*|(|x-a|)><rsup|n-1>q<rprime|'><around*|(|x|)>+n<around*|(|x-a|)><rsup|n-1>q<rprime|'><around*|(|x|)>+<around*|(|x-a|)><rsup|n>q<rprime|'><rprime|'><around*|(|x|)>>
-
-        <item>Tomando <math|n=2>
-
-        <math|p<rprime|'><around*|(|x|)>=2<around*|(|x-a|)>q<around*|(|x|)>+<around*|(|x-a|)><rsup|2>q<rprime|'><around*|(|x|)>>
-
-        <math|p<rprime|''><around*|(|x|)>=2q<around*|(|x|)>+2<around*|(|x-a|)>q<rprime|'><around*|(|x|)>+n<around*|(|x-a|)>q<rprime|'><around*|(|x|)>+<around*|(|x-a|)><rsup|2>q<rprime|''><around*|(|x|)>>
-
-        <item>Vamos con la ida: consideremos que <math|x=a> es raiz de orden
-        2:
-
-        Esto implica: <math|p<around*|(|a|)>=0> y
-        <math|p<around*|(|a|)>=<around*|(|x-a|)><rsup|2>q<around*|(|x|)>>
-
-        <item>De las derivadas anteeriores:
-
-        <math|p<rprime|'><around*|(|a|)>=0>, de manera que
-        <math|p<around*|(|a|)>=p<rprime|'><around*|(|a|)>>
-
-        <math|p<rprime|''><around*|(|a|)>=2 q<around*|(|a|)>>, distinto de
-        cero (<math|q<around*|(|a|)>> no puede ser cero , puesto que si no
-        entones ya no seria <math|a> raiz de orden 2 si no de almenos orden
-        3).
-
-        <item>Vamos con la vuelta: consideramos
+        <item>Ida: Si <math|a> es raiz de orden 2 entonces:
         <math|p<around*|(|a|)>=p<rprime|'><around*|(|a|)>=0> y
-        <math|p<rprime|''><around*|(|a|)>\<neq\>0>\ 
+        <math|p<rprime|''><around*|(|a|)>\<neq\>0>
 
-        <math|p<around*|(|x|)>=<around*|(|x-a|)><rsup|n>q<rsub|i><around*|(|x|)>>
-        , aca puede haber infinitos <math|q<rsub|i><around*|(|x|)>> tales que
-        <math|q<rsub|i><around*|(|a|)>\<neq\>0>
+        <\itemize-minus>
+          <item>Como <math|a> es raiz de orden 2:
+          <math|p<around*|(|x|)>=<around*|(|x-a|)><rsup|2>q<around*|(|x|)>>,
+          <math|q<around*|(|a|)>\<neq\>0>
 
-        <math|p<rprime|''><around*|(|x|)>=n<around*|(|n-1|)><around*|(|x-a|)><rsup|n-2>q<around*|(|x|)>+n<around*|(|x-a|)><rsup|n-1>q<rprime|'><around*|(|x|)>+n<around*|(|x-a|)><rsup|n-1>q<rprime|'><around*|(|x|)>+<around*|(|x-a|)><rsup|n>q<rprime|'><rprime|'><around*|(|x|)>\<neq\>0>
+          <item><math|p<rprime|'><around*|(|x|)>=2<around*|(|x-a|)>q<around*|(|x|)>+<around*|(|x-a|)><rsup|2>q<rprime|'><around*|(|x|)>>
 
-        <item>Si observamos detenidamente, solo hay una opcion y es
-        <math|n=2> si tomaramos <math|n=1> tendriamos una indeterminacion. y
-        tomando <math|n=2> nos aseguramos de que no sea nulo.
+          <item><math|p<rprime|''><around*|(|x|)>=2q<around*|(|x|)>+2<around*|(|x-a|)>q<rprime|'><around*|(|x|)>+2<around*|(|x-a|)>q<rprime|'><around*|(|x|)>+<around*|(|x-a|)><rsup|2>q<rprime|''><around*|(|x|)>>
+
+          <item>Evaluamos: <math|p<around*|(|a|)>=p<rprime|'><around*|(|a|)>=0>
+          y <math|p<rprime|''><around*|(|a|)>=2q<around*|(|a|)>\<neq\>0>
+        </itemize-minus>
+
+        <item>Vuelta: Si <math|p<around*|(|a|)>=p<rprime|'><around*|(|a|)>=0>
+        y <math|p<rprime|''><around*|(|a|)>\<neq\>0> entonces <math|a> es una
+        raiz de orden 2:
+
+        <\itemize-minus>
+          <item><math|p<around*|(|x|)>=<around*|(|x-a|)><rsup|n>q<around*|(|x|)>>,
+          suponemos que <math|a> es una raiz de orden <math|n>
+
+          <item><math|p<rprime|'><around*|(|x|)>=n<around*|(|x-a|)><rsup|n-1>q<around*|(|x|)>+<around*|(|x-a|)><rsup|n>q<rprime|'><around*|(|x|)>>
+
+          <item><math|p<rprime|''><around*|(|x|)>=n<around*|(|n-1|)><around*|(|x-a|)><rsup|n-2>q<around*|(|x|)>+n<around*|(|x-a|)><rsup|n-1>q<rprime|'><around*|(|x|)>+n<around*|(|x-a|)><rsup|n-1>q<rprime|'><around*|(|x|)>+<around*|(|x-a|)><rsup|n>q<rprime|'><rprime|'><around*|(|x|)>>
+
+          <item>Ahora evaluemos en <math|a>
+
+          <item><math|p<around*|(|a|)>=0=<around*|(|x-a|)><rsup|n>q<around*|(|a|)>>
+          Esta ecuacion me dice: o bien <math|<around*|(|x-a|)><rsup|n>=0>,
+          para lo cual requiere que: <math|n\<gtr\>0> o bien
+          <math|q<around*|(|a|)>=0> (Puede ocurrir los dos), si
+          <math|q<around*|(|a|)>=0> entonces es porque
+          <math|q<around*|(|x|)>=<around*|(|x-a|)>k<around*|(|x|)>>. Esto va
+          en contradiccion de suponer que <math|a> es una raiz de orden
+          <math|n>. <math|q<around*|(|a|)>\<neq\>0>
+
+          <item><math|p<rprime|'><around*|(|a|)>=0=n<around*|(|x-a|)><rsup|n-1>q<around*|(|a|)>+<around*|(|x-a|)><rsup|n>q<rprime|'><around*|(|a|)>>,
+          Esta condicion requiere que: <math|n<around*|(|x-a|)><rsup|n-1>=0>
+          lo cual implica que <math|n\<geqslant\>2>.
+          <math|<around*|(|x-a|)><rsup|n>q<rprime|'><around*|(|a|)>=0> Porque
+          a es una raiz de orden <math|n>.
+
+          <item><math|p<rprime|''><around*|(|x|)>=n<around*|(|n-1|)><around*|(|x-a|)><rsup|n-2>q<around*|(|x|)>+n<around*|(|x-a|)><rsup|n-1>q<rprime|'><around*|(|x|)>+n<around*|(|x-a|)><rsup|n-1>q<rprime|'><around*|(|x|)>+<around*|(|x-a|)><rsup|n>q<rprime|'><rprime|'><around*|(|x|)>>.
+          Los terminos <math|<around*|(|x-a|)><rsup|n-1>> y
+          <math|<around*|(|x-a|)><rsup|n>> se anulan por lo dicho
+          anteriormente cuando <math|x=a>
+
+          <item><math|p<rprime|''><around*|(|a|)>=n<around*|(|n-1|)><around*|(|a-a|)><rsup|n-2>q<around*|(|a|)>>,
+          como este termino no es nulo y ademas
+          <math|q<around*|(|a|)>\<neq\>0> luego debe suceder que:
+          <math|n-2=0\<Rightarrow\>n=2> <math|>
+        </itemize-minus>
       </itemize-minus>
 
-      <item><with|color|red|Lo anterior nos da una pista para la
-      generalizacion. Uno en general quiere que
-      <math|p<rsup|k><around*|(|a|)>\<neq\>0> y para ello debe ocurrir que
-      <math|p<around*|(|x|)>=<around*|(|x-a|)><rsup|k>q<around*|(|x|)>> y
-      porsupuesto tener la condicion de que <math|p<around*|(|a|)>=>>
+      <item>Enunciar una generalizacion para el resultado de <math|a>.
+
+      <\itemize-minus>
+        <item>Lo que se requiere es que <math|q<around*|(|a|)>\<neq\>0> , que
+        <math|p<rsup|k><around*|(|a|)>\<neq\>0> y que <math|<frac|d|d
+        x>p<around*|(|a|)>=,\<ldots\>,<frac|d<rsup|k-1>|d
+        x<rsup|k-1>>p<around*|(|a|)>=0>
+      </itemize-minus>
+
+      <item>Cuando el polinomio <math|p<around*|(|x|)>=a x<rsup|2>+b x+c>
+      tiene una raiz doble?
+
+      <\itemize-minus>
+        <item>Cuando: <math|p<around*|(|a|)>=p<rprime|'><around*|(|a|)>=0> y
+        <math|p<rprime|''><around*|(|a|)>\<neq\>0>
+
+        <item><math|p<around*|(|a|)>=a<rsup|3>+b
+        a+c=0\<Leftrightarrow\>c=-a<around*|(|a<rsup|2>+b|)>>
+
+        <item><math|p<rprime|'><around*|(|a|)>=2 a a+b\<Leftrightarrow\>2
+        a<rsup|2>+b=0\<Leftrightarrow\>b=-2 a<rsup|2>>
+
+        <item><math|p<rprime|''><around*|(|a|)>=2 a\<neq\>0>
+
+        <item>Juntando todo: <math|a x<rsup|2>-2 a<rsup|2>x+a<rsup|3>>
+
+        <item>Si calcularamos el discriminante veriamos que este da cero:
+        <math|4a<rsup|4>-4a<rsup|4>>
+      </itemize-minus>
     </enumerate-alpha>
 
     <item>Si <math|a<rsub|1>\<less\>\<cdots\>\<less\>a<rsub|n>> probar que
