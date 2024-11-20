@@ -244,8 +244,9 @@
       <math|f<rprime|'>=<frac|-2|*<around*|(|x-1|)><rsup|2>>> igualando en
       los puntos requeridos:
 
-      <math|-<frac|2|<around*|(|x-1|)><rsup|2>>=2\<Leftrightarrow\>-1=<around*|(|x-1|)><rsup|2>>
-      , no tiene solucion real.
+      <math|<frac|f<around*|(|2|)>-f<around*|(|0|)>|2-0>=<frac|3-<around*|(|-1|)>|2-0>=2=f<rprime|'><around*|(|x|)>=<frac|-2|<around*|(|x-1|)><rsup|2>>\<Leftrightarrow\><with|color|blue|<around*|(|x-1|)><rsup|2>=-1>>
+
+      La ecuacion no tiene solucion real.
     </itemize-minus>
 
     <item>Determinar, intervalos de crecimiento, decrecimiento, concavidad y
@@ -255,11 +256,25 @@
       <item><math|f<around*|(|x|)>=x<rsup|2/3>>
 
       <\itemize-minus>
-        <item><math|f<rprime|'><around*|(|x|)>=<frac|2|3>x<rsup|-1/3>>
+        <item><math|f<rprime|'><around*|(|x|)>=<frac|2|3>x<rsup|-1/3>> ,
+        <math|x\<neq\>0>
 
         <item><math|f<rprime|'><around*|(|x|)>\<gtr\>0> si <math|x\<gtr\>0>
-        mientras que <math|f<rprime|'><around*|(|x|)>\<less\>0> si
-        <math|x\<less\>0>.
+        (Creciente en ese intervalo) mientras que
+        <math|f<rprime|'><around*|(|x|)>\<less\>0> si <math|x\<less\>0>
+        (Decreciente en ese intervalo)
+
+        <item>Como hay un cambio de tendencia en 0 seguramente tendremos un
+        minimo, ya que la funcion es decreciente en <math|x\<less\>0>
+        mientras que es creciente cuando <math|x\<gtr\>0>.
+
+        <item>Para saber si es concava o convexa utilice la segunda derivada:
+
+        <math|f<rprime|''><around*|(|x|)>=-<frac|2|9>x<rsup|-4/3>\<less\>0>
+        para todo <math|x\<neq\>0>
+
+        <item>Esto lo que nos dice es que <math|f<rprime|'><around*|(|x|)>>
+        es decreciente y esto esta asociado a una funcion concava.\ 
       </itemize-minus>
     </enumerate-alpha>
 
@@ -590,8 +605,28 @@
       es convexa.
     </itemize-minus>
 
+    <item>
+
+    <\enumerate-alpha>
+      <item>Demostrar que entre todos los rectángulos que tienen determinado
+      perimetro, el cuadrado tiene área máxima.
+
+      <\itemize-minus>
+        <item><math|p=2a+2b\<Leftrightarrow\>b=<frac|p|2>-a> ; considere
+        <math|p> fijo.
+
+        <item><math|A=a <around*|(|<frac|p|2>-a|)>=<frac|p|2>a-a<rsup|2>>
+
+        <item><math|A<rprime|'>=<frac|p|2>-2
+        a=0\<Leftrightarrow\><frac|p|2>=2a\<Leftrightarrow\>p=4 a> ; Este es
+        el perimetro que obtendrias si todos los lados fueran iguales.
+      </itemize-minus>
+    </enumerate-alpha>
+
     \;
   </enumerate-numeric>
+
+  \;
 </body>
 
 <\initial>
