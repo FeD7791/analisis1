@@ -5,6 +5,79 @@
 <\body>
   <doc-data|<doc-title|Practico 1>>
 
+  <section|Introduccion Teorica>
+
+  <subsection|Propiedades del Cuerpo ordenado>
+
+  <\enumerate-numeric>
+    <item>Ley asociativa para la suma
+
+    <item>Elemento Neutro para la suma (el cero)
+
+    <item>Existencia del opuesto para la suma
+
+    <item>Ley conmutativa para la suma
+
+    <item>Ley asociativa para la multiplicacion
+
+    <item>Existencia de inversos en la multiplicacion
+
+    <item>Existencia de el elemento Neutro multiplicativo (el 1)
+
+    <item>Ley conmutativa para la multiplicacion
+
+    <item>Ley distributiva
+
+    <item>Ley de Tricotomia: Para todo numero <math|a> solo se pueden cumplir
+    una y solo una de las siguientes igualdades: Sea <math|P> el conjunto de
+    los numeros potitivos,
+
+    <\itemize-minus>
+      <item><math|a\<in\>P>
+
+      <item><math|a\<nin\>P>
+
+      <item><math|a=0>
+    </itemize-minus>
+
+    <item>La suma es cerrada en <math|P>, si
+    <math|a,b\<in\>P\<Rightarrow\>a+b\<in\>P>
+
+    <item>La multiplicacion es cerrada en <math|P>.\ 
+
+    <item>En el teorico de Salvai , se exhiben otras propiedades, que guardan
+    cierta analogia:
+
+    <\itemize-minus>
+      <item><math|a\<less\>b<space|1em>y<space|1em>b\<less\>c<space|1em>\<Rightarrow\>a\<less\>c>
+      (Transitividad) : Esto puede entenderse como que:
+      <math|b-a\<in\>P,c-b\<in\>P\<Rightarrow\>b-a+c-b\<in\>P\<Rightarrow\>c-a\<in\>P\<Rightarrow\>c-a\<gtr\>0\<Leftrightarrow\>c\<gtr\>a>
+    </itemize-minus>
+  </enumerate-numeric>
+
+  <subsection|El valor absoluto>
+
+  Definicion:
+
+  <\equation*>
+    <around*|\||a|\|>=<around*|{|<tabular|<tformat|<table|<row|<cell|a si
+    a\<geqslant\>0>>|<row|<cell|-a si a\<less\>0>>>>>|\<nobracket\>>
+  </equation*>
+
+  <subsubsection|Valor absoluto y raiz cuadrada:>
+
+  <\equation*>
+    <around*|\||a|\|>=<sqrt|a<rsup|2>>
+  </equation*>
+
+  <subsection|La desigualdad trangular>
+
+  <\equation*>
+    <around*|\||a+b|\|>\<leqslant\><around*|\||a|\|>+<around*|\||b|\|>
+  </equation*>
+
+  <section|Practico>
+
   <\enumerate-numeric>
     <item>
 
@@ -723,3 +796,14 @@
     <associate|page-medium|paper>
   </collection>
 </initial>
+
+<\references>
+  <\collection>
+    <associate|auto-1|<tuple|1|?>>
+    <associate|auto-2|<tuple|1.1|?>>
+    <associate|auto-3|<tuple|1.2|?>>
+    <associate|auto-4|<tuple|1.2.1|?>>
+    <associate|auto-5|<tuple|1.3|?>>
+    <associate|auto-6|<tuple|2|?>>
+  </collection>
+</references>
