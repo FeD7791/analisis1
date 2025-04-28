@@ -3,7 +3,21 @@
 <style|generic>
 
 <\body>
+  \;
+
   <doc-data|<doc-title|Guia 4>>
+
+  <section|Teorico>
+
+  <\itemize-dot>
+    <item>
+
+    <item>Teorema Relacion limite y sucesiones: Sea
+    <math|f:A-<around*|{|a|}>> entonces <math|lim<rsub|x\<rightarrow\>a>f<around*|(|x|)>=l\<Leftrightarrow\>lim<rsub|n\<rightarrow\>\<infty\>>f<around*|(|x<rsub|n>|)>=l>
+    para toda sucesion <math|x<rsub|n>> con valores en <math|A> que cumple
+    con <math|x<rsub|n>\<neq\>a> para todo <math|n> y
+    <math|lim<rsub|n\<rightarrow\>\<infty\>>x<rsub|n>=a>
+  </itemize-dot>
 
   <section|Practico>
 
@@ -99,8 +113,6 @@
 
         <item><math|M\<less\><frac|1|<around*|(|x-3|)><rsup|2>>\<leqslant\><frac|1|<around*|\||x-3|\|><rsup|2>>\<Leftrightarrow\><around*|\||x-3|\|>\<less\><frac|1|<sqrt|M>>>
 
-        <item><with|color|red|Que sucede si <math|M\<less\>0>?>
-
         \;
       </itemize-minus>
     </enumerate-alpha>
@@ -132,15 +144,46 @@
       <item><math|lim<rsub|x\<rightarrow\>0<rsup|+>>sen<around*|(|<frac|1|x>|)>>
 
       <\itemize-minus>
-        <item>Esto lo que dice es que no existe el limite derecho si quiera.
+        <item>Suponga por el absurdo que este limite existe y es L. Por
+        definicion si tomo <math|\<varepsilon\>=<frac|1|2>> deberia poder
+        encontrar <math|\<delta\>>
 
-        <item>Suponga que <math|<around*|\||sen<around*|(|<frac|1|x>|)>-l|\|>\<less\>\<varepsilon\>>
-        para <math|0\<less\>x\<less\>\<delta\>>
+        <item><math|<around*|\||sen<around*|(|<frac|1|x>|)>|\|>\<less\><frac|1|2>>
+        si <math|<around*|\||x-0|\|>\<less\>\<delta\>> , pero lo estamos
+        viendo para el limite derecho , es decir:
+        <math|0\<less\>x\<less\>\<delta\>\<Rightarrow\>0\<less\>sen<around*|(|<frac|1|x>|)>\<less\><frac|1|2>>
 
-        <item><math|<around*|\||sen<around*|(|<frac|1|x>|)>-l|\|>\<leqslant\><around*|\||sen<around*|(|<frac|1|x>|)>|\|>+<around*|\||l|\|>\<leqslant\>1+<around*|\||l|\|>>
+        <item>Por la arquimenidad, puedo elegir <math|x<rsub|1>=<frac|1|n
+        \<pi\>>\<less\>\<delta\>> para todo <math|\<delta\>>
 
-        <item>Es decir, est evalor nunca puede ser menor que
-        <math|\<varepsilon\>> para <math|<around*|\||l|\|>\<gtr\>0>
+        <item>Por otro lado si tomo: \ <math|x<rsub|2>=<frac|1|2m\<pi\>+<frac|\<pi\>|2>>\<less\>\<delta\>>
+
+        <item>Como esto sucede entonces porsupuesto deberia cumplirse:\ 
+
+        <math|<around*|\||sen<around*|(|<frac|1|1/n
+        \<pi\>>|)>|\|>\<less\><frac|1|2>> y
+        <math|<around*|\||sen<around*|(|<frac|1|1/<around*|(|2m\<pi\>+\<pi\>/2|)>>|)>|\|>\<less\><frac|1|2>>
+
+        <item><math|1=<around*|\||sen<around*|(|n\<pi\>|)>-sen<around*|(|2m\<pi\>+<frac|\<pi\>|2>|)>|\|>=<around*|\||sen<around*|(|n\<pi\>|)>-L-sen<around*|(|2m\<pi\>+<frac|\<pi\>|2>|)>+L|\|>\<leqslant\>>
+
+        <math|<frac|1|2>+<frac|1|2>=1> , lo cual es un absurdo.
+      </itemize-minus>
+
+      <item>Resolvemos el item b) pero con sucesiones:
+
+      <\itemize-minus>
+        <item>Considere dos sucesiones tales que:
+        <math|lim<rsub|n\<rightarrow\>\<infty\>>a<rsub|n>=0>
+
+        <item><math|a<rsub|n>=<around*|{|<frac|1|\<pi\> n>|}>> ,
+        <math|b<rsub|n>=<around*|{|<frac|1|2\<pi\>n+\<pi\>/2>|}>> , estas
+        sucesiones cumplen el limite anterior.
+
+        <item>Luego: <math|lim<rsub|n\<rightarrow\>\<infty\>>f<around*|(|a<rsub|n>|)>=lim<rsub|n\<rightarrow\>\<infty\>>sen<around*|(|\<pi\>n|)>=0>
+
+        <item><math|lim<rsub|n\<rightarrow\>\<infty\>>f<around*|(|b<rsub|n>|)>=lim<rsub|n\<rightarrow\>\<infty\>>sen<around*|(|2\<pi\>n+\<pi\>/2|)>=1>
+
+        <item>La sucesion converge a limites distintos.
       </itemize-minus>
     </enumerate-alpha>
 
@@ -213,7 +256,29 @@
 
         <item>Esta ultima expresion es la del limite al infinito.
       </itemize-minus>
+
+      <item><math|lim<rsub|x\<rightarrow\>0<rsup|+>>f<around*|(|x|)>=\<infty\>\<Leftrightarrow\>lim<rsub|x\<rightarrow\>\<infty\>>f<around*|(|1/x|)>=\<infty\>>
+
+      <\itemize-minus>
+        <item><math|lim<rsub|x\<rightarrow\>0<rsup|+>>f<around*|(|x|)>=\<infty\>\<Rightarrow\>lim<rsub|x\<rightarrow\>\<infty\>>f<around*|(|1/x|)>=\<infty\>>
+
+        <item><math|f<around*|(|x|)>\<gtr\>M> si
+        <math|0\<less\>x\<less\>\<delta\>> entonces, si
+        <math|<frac|1|\<delta\>>\<less\><frac|1|x>> luego:
+        <math|f<around*|(|x|)>\<gtr\>M>
+
+        <item>Tomando <math|y=<frac|1|x>> , reescribimos:
+        <math|N\<less\>y\<Rightarrow\>f<around*|(|<frac|1|y>|)>\<gtr\>M>
+
+        <item>La vuelta es similar.
+      </itemize-minus>
+
+      <item>
     </enumerate-alpha>
+
+    <item>
+
+    <item>
   </enumerate-numeric>
 </body>
 
@@ -225,16 +290,21 @@
 
 <\references>
   <\collection>
-    <associate|auto-1|<tuple|1|1|../../../.TeXmacs/texts/scratch/no_name_4.tm>>
+    <associate|auto-1|<tuple|1|1>>
+    <associate|auto-2|<tuple|2|1>>
   </collection>
 </references>
 
 <\auxiliary>
   <\collection>
     <\associate|toc>
-      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|1<space|2spc>Practico>
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|1<space|2spc>Teorico>
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-1><vspace|0.5fn>
+
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|2<space|2spc>Practico>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-2><vspace|0.5fn>
     </associate>
   </collection>
 </auxiliary>
