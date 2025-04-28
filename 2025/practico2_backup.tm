@@ -8,8 +8,7 @@
   <\enumerate-numeric>
     <item>
 
-<<<<<<< HEAD
-    <item>
+    <\<><\<><\ > <item>
 
     <item>
 
@@ -215,12 +214,10 @@
       solo que debe excluir el 0 del dominio.
     </enumerate-alpha>
 
-    \;
-=======
-    <item>El cubo tiene 6 caras, si el lado mide <math|l> entonces, cada cara
-    tiene un area de <math|l<rsup|2>>, Por lo cual la superficie del cubo es:
-    <math|s<around*|(|l|)>=6 l<rsup|2>>. El volumen de un cubo es:
-    <math|V<around*|(|l|)>=l<rsup|3>\<Leftrightarrow\>l=<around*|(|V|)><rsup|1/3>>,
+    \ ======= <item>El cubo tiene 6 caras, si el lado mide <math|l> entonces,
+    cada cara tiene un area de <math|l<rsup|2>>, Por lo cual la superficie
+    del cubo es: <math|s<around*|(|l|)>=6 l<rsup|2>>. El volumen de un cubo
+    es: <math|V<around*|(|l|)>=l<rsup|3>\<Leftrightarrow\>l=<around*|(|V|)><rsup|1/3>>,
     Entonces: <math|s<around*|(|V|)>=6<around*|(|V|)><rsup|2/3>>
 
     <item>
@@ -341,7 +338,8 @@
         <item>Verdadero.
       </itemize-minus>
     </enumerate-alpha>
->>>>>>> 608536f (changes)
+  <|enumerate-numeric||||||>
+    608536f (changes)
   </enumerate-numeric>
 </body>
 
