@@ -221,9 +221,70 @@
 
     <item>
 
-    <item>
+    <item><with|color|red|Sea <math|p<around*|(|x|)>=x<rsup|5>+x+1>>
 
-    <item>
+    <\enumerate-alpha>
+      <item>Demostrar que: <math|lim<rsub|x\<rightarrow\>\<infty\>>p<around*|(|x|)>=\<infty\>>
+      , <math|lim<rsub|x\<rightarrow\>-\<infty\>>p<around*|(|x|)>=-\<infty\>>
+
+      <\itemize-minus>
+        <item><math|lim<rsub|x\<rightarrow\>\<pm\>\<infty\>>x<rsup|5><around*|(|1+<frac|1|x<rsup|4>>+<frac|1|x<rsup|5>>|)>=\<pm\>\<infty\>>
+      </itemize-minus>
+
+      <item>Pobrar que <math|p<around*|(|x|)>> es suryectiva:
+
+      <\itemize-minus>
+        <item>Considere <math|<around*|\||l|\|>\<less\>M\<Rightarrow\>-M\<less\>l\<less\>M>
+
+        <item>Puede encontrar valores: <math|N<rsub|1>/si
+        x\<gtr\>N<rsub|1>\<Rightarrow\>f<around*|(|x|)>\<gtr\>M> y
+        <math|N<rsub|2>/si x\<less\>N<rsub|2>\<Rightarrow\>f<around*|(|x|)>\<less\>-M>\ 
+
+        <item>Si tomo <math|x<rsub|1>\<gtr\>N<rsub|1>> y
+        <math|x<rsub|2>\<less\>N<rsub|2>> , luego:
+        <math|f<around*|(|x<rsub|2>|)>\<less\>-M\<less\>l\<less\>M\<less\>f<around*|(|x<rsub|1>|)>>
+
+        <item>O sea que, en el intervalo <math|<around*|[|min<around*|(|x<rsub|1>,x<rsub|2>|)>,max<around*|(|x<rsub|1>,x<rsub|2>|)>|]>>
+        (Lo escribo asi en caso de que la funcion fuera decreciente) puedo
+        aplicar el teorema del valor intermedio.
+
+        <item>Entonces existe <math|x<rsub|0>\<in\><around*|[|min<around*|(|x<rsub|1>,x<rsub|2>|)>,max<around*|(|x<rsub|1>,x<rsub|2>|)>|]>>
+        tal que: <math|f<around*|(|x<rsub|0>|)>=l> \ 
+      </itemize-minus>
+
+      <item>Hallar algun numero natural tal que: <math|p<around*|(|x|)>=0>
+      para <math|x\<in\><around*|[|-n,n|]>>
+
+      <\itemize-minus>
+        <item>Use <math|b> , basicament debe buscar
+        <math|p<around*|(|-n|)>\<less\>0> y <math|p<around*|(|n|)>\<gtr\>0> ,
+        esto funciona por ejemplo para: <math|n=5>
+      </itemize-minus>
+    </enumerate-alpha>
+
+    <item>Sea f una función continua y supongamos que f (x) es siempre
+    racional. ¾Qué se puede decir de f ?
+
+    <\itemize-minus>
+      <item>Se puede decir que esta funcion es constante. Analizamos este
+      argumento:
+
+      <item>Suponga que la funcion <math|f> no es constante en el intervalo:
+      <math|<around*|[|x<rsub|1>,x<rsub|2>|]>>, esto significa que se debe
+      satisfacer alguna de las relacion de tricotomia distinta de la
+      igualdad. Es decir, por ejemplo: <math|f<around*|(|x<rsub|1>|)>\<less\>f<around*|(|x<rsub|2>|)>>.
+
+      <item>Como <math|\<bbb-I\>> es denso, entonces entre dos numeros
+      cualesquiera vamos a encontrar un irracional:
+      <math|f<around*|(|x<rsub|1>|)>\<less\>I\<less\>f<around*|(|x<rsub|2>|)>>
+
+      <item>Por continuidad de la funcion, en el intervalo
+      <math|<around*|[|x<rsub|1>,x<rsub|2>|]>>, donde se cumple:
+      <math|f<around*|(|x<rsub|1>|)>\<less\>I\<less\>f<around*|(|x<rsub|2>|)>>
+      el teorema de los valores intermedios nos asegura que:
+      <math|\<exists\>x<rsub|0>\<in\><around*|(|x<rsub|1>,x<rsub|2>|)>> tal
+      que <math|f<around*|(|x<rsub|0>|)>=I>. Esto produce un absurdo.
+    </itemize-minus>
 
     <item>
 
@@ -250,9 +311,9 @@
         <math|f<around*|(|x<rsub|0>|)>=g<around*|(|x<rsub|0>|)>>
       </itemize-minus>
 
-      <item>Mostrar que la ecuación <math|sen(x) = x + 1>, tiene al menos una
-      solución. Graficar las funciones <math|sen(x)> y <math|x + 1> en el
-      mismo sistema de ejes coordenados.
+      <item><with|color|red|Mostrar que la ecuación <math|sen(x) = x + 1>,
+      tiene al menos una solución. Graficar las funciones <math|sen(x)> y
+      <math|x + 1> en el mismo sistema de ejes coordenados.>
 
       <\itemize-minus>
         <item>Con la misma idea que a) conformamos la funcion:
@@ -394,15 +455,22 @@
       <math|<around*|\||f<around*|(|x|)>|\|>\<less\>\<varepsilon\>> si
       <math|x<rsub|M>\<less\>x>
 
-      <item>Si tomamos <math|\<alpha\>=max<around*|(|<around*|\||x<rsub|m>|\|>,<around*|\||x<rsub|M>|\|>|)>>
-      luego: <math|<around*|\||f<around*|(|x|)>|\|>\<less\>\<varepsilon\>> si
-      <math|<around*|\||x|\|>\<gtr\>\<alpha\>>
+      <item>Como puede elegir libremente <math|\<varepsilon\>> tome
+      <math|f<around*|(|\<alpha\>|)>=\<varepsilon\>>
 
-      <item>En el intervalo <math|<around*|\||x|\|>\<leqslant\>\<alpha\>> ,
-      como <math|f> es continua, podemos aplicar el Tercer teorema fuerte ,
-      <math|f> alcanza un maximo en <math|<around*|[|-\<alpha\>,\<alpha\>|]>>,
-      es decir <math|f<around*|(|x<rsub|0>|)>\<geqslant\>f<around*|(|x|)>>
-      para <math|x<rsub|0>\<in\><around*|[|-\<alpha\>,\<alpha\>|]>>\ 
+      <item>Entonces si <math|x\<less\>x<rsub|m>> o <math|x\<gtr\>x<rsub|M>>
+      luego: <math|f<around*|(|x|)>\<leqslant\><around*|\||f<around*|(|x|)>-0|\|>\<less\>f<around*|(|\<alpha\>|)>>
+      <math|>
+
+      <item>Si ahora examinamos el intervalo
+      <math|<around*|[|x<rsub|m>,x<rsub|M>|]>>, tenemos que <math|f> es
+      continua. Por lo que podemos aplicar el tercer teorema fuerte:
+      <math|\<exists\>\<beta\>\<in\><around*|[|x<rsub|m>,x<rsub|M>|]>> tal
+      que <math|f<around*|(|\<beta\>|)>\<geqslant\>f<around*|(|x|)>> para
+      todo <math|x> en ese intervalo.
+
+      <item>Tome <math|\<alpha\>> o <math|\<beta\>> segun produzca el valor
+      mas grande de <math|f>.
     </itemize-minus>
 
     <item>
