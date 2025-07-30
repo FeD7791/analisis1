@@ -348,6 +348,161 @@
       pertenece al intervalo y es un punto donde <math|f> no esta definida,
       por lo cual el teorema no puede aplicarse.
     </itemize-minus>
+
+    <item>Para cada una de las siguientes funciones, determine los intervalos
+    de crecimiento y decrecimiento, valores máximos y/o m\Ynimos, intervalos
+    de concavidad, puntos de inflexión, asintotas horizontales y verticales y
+    grafique.
+
+    <\enumerate-alpha>
+      <item>
+
+      <item>
+
+      <item>
+
+      <item>
+
+      <item>
+
+      <item>
+
+      <item>
+
+      <item>
+
+      <item><math|f<around*|(|x|)>=<frac|1|x<rsup|2>+3 x+5>>
+
+      <\itemize-minus>
+        <item><math|x<rsup|2>+3 x+5=0\<Rightarrow\>x=<frac|-3\<pm\><sqrt|9-4\<cdummy\>5>|2
+        >>
+
+        <item>El discriminante nos dice que tenemos, raices complejas, por lo
+        tanto el denominador nunca se anula.
+
+        <item>Pasos para el grafico:\ 
+
+        <\enumerate-numeric>
+          <item>Dom f = <math|\<bbb-R\>>
+
+          <item>Saber si es par: <math|f<around*|(|-x|)>=f<around*|(|x|)>>
+          (Lo cual no sucede) ; Tampoco es impar.
+
+          <item>No hay puntos de interseccion con los ejes coordenados
+
+          <item>Asintotas: <math|lim<rsub|x\<rightarrow\>\<pm\>\<infty\>><frac|1|x<rsup|2>+3
+          x+5>=0> (Asintota Horizontal) ; Para la asintota oblicua hacemos:
+          <math|lim<rsub|x\<rightarrow\>\<infty\>><frac|x|x<rsup|2>+3
+          x+5>=lim<rsub|x\<rightarrow\>\<infty\>><frac|1|x+3 +5/x>=0>
+          (asintota de pendiente <math|m=0>)
+        </enumerate-numeric>
+
+        <item>Puntos Criticos: Puntos donde la derivada existe o no existe.
+
+        <math|f<rprime|'><around*|(|x|)>=<around*|(|x<rsup|2>+3x+5|)><rsup|-1>=-<around*|(|x<rsup|2>+3x+5|)><rsup|-2><around*|(|2x+3|)>>
+        ; Esta derivada existe para todo <math|x> en su dominio. Ya sabemos
+        que el denominador no se anula. Entonces, todo depende del numerador:
+        <math|2 x+3=0\<Leftrightarrow\>x=-<frac|3|2>>
+
+        <item>Fijarse que el denominador tiene siempre signo positivo. Pero
+        el numerado es : <math|-<around*|(|2x+3|)>> cambia de signo en
+        <math|x=-<frac|3|2>> , si <math|x\<less\>-<frac|3|2>> el numerador es
+        positivo, caso contrar io es negativo. Como la derivada es positiva
+        en: <math|<around*|(|-\<infty\>,-3/2|)>> entonces <math|f> es
+        creciente, mientras que es negativa en el otro intervalo:
+        <math|<around*|(|-3/2,\<infty\>|)>> por lo tanto <math|f> es
+        decreciente (estricto). Esto sugiere que <math|f> tiene un
+        <with|font-series|bold|maximo> en <math|x=-<frac|3|2>>.
+
+        <item>Seguro este punto es concavo. Deben existir ademas puntos de
+        inflexion. Para buscarlos puedo utilizar la derivada segunda (Mucho
+        ojo, que si la derivada segunda es nula, no es necesariamente ese un
+        punto de inflexion)
+
+        <item><math|f<rprime|''><around*|(|x|)>=2<around*|(|x<rsup|2>+3x+5|)><rsup|-3><around*|(|2x+3|)><rsup|2>-<around*|(|x<rsup|2>+3x+5|)><rsup|-2><around*|(|2|)>>\ 
+
+        <item><math|f<rprime|''><around*|(|x|)>=2<around*|(|x<rsup|2>+3x+5|)><rsup|-2><around*|[|<around*|(|x<rsup|2>+3x+5|)><rsup|-1><around*|(|2x+3|)><rsup|2>-1|]>>
+
+        <item>Si todo esta bien, solo tendria que analizar el signo de lo que
+        esta en corchete. Solo tendria que ver donde se anula el corchete y
+        este se anula en:
+
+        <item><math|4x<rsup|2>+12x+9-x<rsup|2>-3x-5=3x<rsup|2>+9x+4=0>
+
+        <math|x=<frac|-9\<pm\><sqrt|81-4<around*|(|3|)><around*|(|4|)>>|6>> ;
+        aca hay dos raices reales distintas y esos serian los puntos de
+        inflexion.
+      </itemize-minus>
+
+      <item>
+
+      <item>
+    </enumerate-alpha>
+
+    <item>
+
+    <item>
+
+    <item>Deducir que <math|sen<around*|(|x|)>\<less\>x> ;\ 
+
+    <\itemize-minus>
+      <item>Vamos a usar el resultado del ejercicio 10
+
+      <item><math|f<around*|(|x|)>=x> ; <math|g<around*|(|x|)>=sen<around*|(|x|)>>
+
+      <item><math|f<around*|(|0|)>=g<around*|(|0|)>=0>
+
+      <item><math|f<rprime|'><around*|(|x|)>=1> ;
+      <math|g<rprime|'><around*|(|x|)>=cos<around*|(|x|)>> ;
+      <math|f<rprime|'><around*|(|x|)>\<geqslant\>cos<around*|(|x|)>>\ 
+    </itemize-minus>
+
+    <item>Sean <math|f,g:I\<rightarrow\>\<bbb-R\>> derivables en todo punto
+    del intervalo abierto I.
+
+    <\enumerate-alpha>
+      <item>Si <math|f<rprime|'><around*|(|x|)>\<gtr\>g<rprime|'><around*|(|x|)>\<forall\>x\<in\>I\<wedge\>f<around*|(|a|)>=g<around*|(|a|)>\<Rightarrow\>f<around*|(|x|)>\<gtr\>g<around*|(|x|)>>\ 
+
+      <\itemize-minus>
+        <item><math|h<around*|(|x|)>=f<around*|(|x|)>-g<around*|(|x|)>\<Rightarrow\>h<around*|(|x|)>>
+        es derivable en <math|I> ; <math|h<rprime|'><around*|(|x|)>=f<rprime|'><around*|(|x|)>-g<rprime|'><around*|(|x|)>\<gtr\>0>
+
+        <item>Si esto sucede, <math|h<around*|(|x|)>> es creciente.
+
+        <item>Como <math|h<around*|(|a|)>=0> luego
+        <math|h<around*|(|x|)>\<gtr\>0> <math|\<forall\>x\<gtr\>a\<Rightarrow\>f<around*|(|x|)>\<gtr\>g<around*|(|x|)>\<forall\>x\<gtr\>a/x\<in\>I>
+      </itemize-minus>
+    </enumerate-alpha>
+
+    <item>Sea <math|f<around*|(|x|)>> una funcion tal que
+    <math|f<rprime|'><around*|(|x|)>=<frac|1|x>\<forall\>x\<gtr\>0> y
+    <math|f<around*|(|1|)>=0>. Demostrar que <math|f<around*|(|x
+    y|)>=f<around*|(|x|)>+f<around*|(|y|)>> <math|\<forall\>x,y\<gtr\>0>
+    (Esto es basicamente la propiedad del logaritmo)
+
+    <\itemize-minus>
+      <item>Como dice la sugerencia, usar la derivada de
+      <math|g<rprime|'><around*|(|x|)>=f<rprime|'><around*|(|x y|)>> hacemos
+      ese calculo:
+
+      <item><math|g<around*|(|x|)>=f<around*|(|x
+      y|)>\<Rightarrow\>g<rprime|'><around*|(|x|)>=f<rprime|'><around*|(|x
+      y|)> y=<frac|1|x y >y=<frac|1|x>>, esto basicamente nos dice que
+      tenemos dos funciones <math|f,g> tales que cumplen:
+      <math|f<rprime|'><around*|(|x|)>=g<rprime|'><around*|(|x|)>> por lo
+      cual sabemos que las mismas difieren en una constante:
+      <math|f<around*|(|x|)>=g<around*|(|x|)>+c>
+
+      <item><math|f<around*|(|x|)>=f<around*|(|x y|)>+c>\ 
+
+      <item>Para conocer el valor de <math|c> , simplemente hacemos <math|x=1
+      <around*|(|f<around*|(|1|)>=0|)>\<Rightarrow\>0=f<around*|(|y|)>+c>
+
+      <item>Es decir que <math|c=-f<around*|(|y|)>\<Rightarrow\>f<around*|(|x
+      y|)>=f<around*|(|x|)>+f*<around*|(|y|)>>
+    </itemize-minus>
+
+    <item>
   </enumerate-numeric>
 
   \;
@@ -372,16 +527,12 @@
 <\references>
   <\collection>
     <associate|auto-1|<tuple|1|1>>
-    <associate|auto-10|<tuple|1|?>>
-    <associate|auto-11|<tuple|1|?>>
     <associate|auto-2|<tuple|1.1|1>>
     <associate|auto-3|<tuple|1.2|2>>
     <associate|auto-4|<tuple|1|2>>
-    <associate|auto-5|<tuple|1.3|?>>
-    <associate|auto-6|<tuple|1.4|?>>
-    <associate|auto-7|<tuple|2|?>>
-    <associate|auto-8|<tuple|2.1|?>>
-    <associate|auto-9|<tuple|2.1.1|?>>
+    <associate|auto-5|<tuple|1.3|3>>
+    <associate|auto-6|<tuple|1.4|3>>
+    <associate|auto-7|<tuple|2|3>>
   </collection>
 </references>
 
@@ -409,6 +560,18 @@
       <with|par-left|<quote|1tab>|1.2<space|2spc>Concavidad y convexidad
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-3>>
+
+      <with|par-left|<quote|1tab>|1.3<space|2spc>Asintotas
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-5>>
+
+      <with|par-left|<quote|1tab>|1.4<space|2spc>Graficos de funciones
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-6>>
+
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|2<space|2spc>Practico>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-7><vspace|0.5fn>
     </associate>
   </collection>
 </auxiliary>
