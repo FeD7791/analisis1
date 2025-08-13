@@ -3,10 +3,169 @@
 <style|generic>
 
 <\body>
+  <section|Teoria>
+
+  <subsection|Propiedades de Cuerpo>
+
+  En el conjunto de los numeros <math|\<bbb-R\>> existen dos operaciones:
+  Suma y Multipliacion.
+
+  <\enumerate-numeric>
+    <item>Conmutatividad de la Suma
+
+    <item>Conmutatividad Multiplicacion
+
+    <item>Asociatividad Suma\ 
+
+    <item>Asociatividad multiplicacion
+
+    <item>Elemento Neutro para la suma: 0\ 
+
+    <item>Elemento neutro para la multiplicacion: 1
+
+    <item>Opuesto para la suma: <math|a+<around*|(|-a|)>=0>
+
+    <item>Inverso Multiplicativo: <math|a\<cdummy\>a<rsup|-1>=1>
+
+    <item>Distributividad
+  </enumerate-numeric>
+
+  Un conjunto con estas nueve propiedades se denomina cuerpo.
+
+  <\itemize-dot>
+    <item>A partir de las 13 propiedades de cuerpo ordenado no se puede
+    demostrar que todo número positivo tiene una raiz cuadrada.
+  </itemize-dot>
+
+  <subsection|Propiedades de Orden>
+
+  <\enumerate-numeric>
+    <item>Tricotomia: <math|a=b> ; <math|a\<less\>b> ; <math|a\<gtr\>b> ;
+    solo se cumple una de estas tres.
+
+    <item>Transitividad: <math|a\<less\>b> y
+    <math|b\<less\>c\<Rightarrow\>a\<less\>c>
+
+    <item>Si <math|a\<less\>b> y <math|c\<in\>\<bbb-R\>\<Rightarrow\>a+c\<less\>b+c>
+
+    <item>Si <math|a\<less\>b> y <math|c\<in\>\<bbb-R\><rsub|\<gtr\>0>\<Rightarrow\>a\<cdummy\>c\<less\>b\<cdummy\>c>
+  </enumerate-numeric>
+
+  Un cuerpo, mas estas cuatro propiedades se denomina: Cuerpo ordenado.
+
+  <subsection|Valor absoluto>
+
+  <\itemize-dot>
+    <item><math|<around*|\||a|\|>=<around*|{|<tabular|<tformat|<table|<row|<cell|a
+    >|<cell|si a\<geqslant\>0>>|<row|<cell|-a>|<cell|si
+    a\<less\>0>>>>>|\<nobracket\>>>
+  </itemize-dot>
+
+  <\proposition>
+    Desigualdad triangular: <math|<around*|\||x+y|\|>\<leqslant\><around*|\||x|\|>+<around*|\||y|\|>>
+  </proposition>
+
+  La prueba de la proposicion es util. Algunas cosas a tener en cuenta, se
+  puede demostrar:
+
+  <\itemize-minus>
+    <item><math|<around*|\||a|\|><rsup|2>=a<rsup|2>> ;
+    <math|a\<less\><around*|\||a|\|>> ; <math|<around*|\||a
+    \<cdummy\>b|\|>=<around*|\||a|\|> <around*|\||b|\|>>
+  </itemize-minus>
+
+  Demostracion:
+
+  <math|<around*|\||x+y|\|><rsup|2>=<around*|(|x+y|)><rsup|2>=x<rsup|2>+2 x
+  y+y<rsup|2>\<leqslant\><around*|\||x|\|><rsup|2>+2<around*|\||x
+  y|\|>+<around*|\||y|\|><rsup|2>=<around*|\||x|\|><rsup|2>+2<around*|\||x|\|>
+  <around*|\||y|\|>+<around*|\||y|\|><rsup|2>=<around*|(|<around*|\||x|\|>+<around*|\||y|\|>|)><rsup|2>>
+
+  <subsection|Propiedad del Supremo / Infimo>
+
+  Esta propiedad permite distinguir a <math|\<bbb-R\>> de <math|\<bbb-Q\>>
+  (Que satisface las primeras 13 propiedades). Por otro lado permite
+  representar a <math|\<bbb-R\>> como una recta llena.
+
+  <\definition>
+    Sea un subconjunto A de <math|\<bbb-R\>>. Un numero M es una
+    <with|font-series|bold|cota superior> de A si <math|a\<leqslant\>M>
+    <math|\<forall\>a\<in\>A>. Todo numero M' \<gtr\> M tambien es cota
+    superior de A.
+  </definition>
+
+  <with|font-series|bold|Propiedad del supremo>: Todo subconjunto <math|A> de
+  <math|\<bbb-R\>> no vacio y acotado superiormente, tiene una cota superior
+  minima, que se llama supremo de <math|A> y se denota por <math|supA>. Tener
+  en cuenta que esto significa dos cosas:
+
+  <\itemize-minus>
+    <item>Sup A es una cota superior
+
+    <item>Sup A es la menor de todas las cotas superiores.
+  </itemize-minus>
+
+  <\definition>
+    Maximo / Minimo: Si <math|\<alpha\>> es una cota superior de A, y ademas
+    <math|\<alpha\>\<in\>A>, entonces <math|\<alpha\>> se denomina Maximo de
+    A.
+  </definition>
+
+  <\proposition>
+    Todo subconjunto No vacio acotado superiormente tiene supremo. De la
+    misma forma, todo subconjunto no vacio acotado inferiormente tiene
+    infimo.
+  </proposition>
+
+  <\proposition>
+    Propiedad Arquimediana de los numeros reales: El conjunto
+    <math|\<bbb-N\>> de los numeros naturales no esta acotado superiormente.
+  </proposition>
+
+  <\proposition>
+    Para todo numero <math|\<varepsilon\>\<gtr\>0>, existe
+    <math|n\<in\>\<bbb-N\>/<frac|1|n>\<less\>\<varepsilon\>>
+  </proposition>
+
+  <\definition>
+    Conjunto Denso: Un subconjunto A de <math|\<bbb-R\>> se dice denso en
+    <math|\<bbb-R\>> si <math|\<forall\>b,c/b\<less\>c> existe un numero
+    <math|a\<in\>A/> <math|b\<less\>a\<less\>c>
+  </definition>
+
+  \;
+
   <section|Problemas>
 
   <\enumerate-numeric>
     <item>
+
+    <\enumerate-alpha>
+      <item><math|a b=0\<Rightarrow\>a=0 o b=0>
+
+      <\itemize-minus>
+        <item><math|a b=0> ; Por tricotomia podria tomar <math|a=0> , con lo
+        cual ya queda demostrado
+
+        <item>Sin embargo suponga <math|a\<neq\>0>
+        <math|\<Rightarrow\>\<exists\>a<rsup|-1>/a a<rsup|-1>=1>
+
+        <item><math|a<rsup|-1> a b=a<rsup|-1>\<cdummy\>0\<Leftrightarrow\>1\<cdummy\>b=0\<Rightarrow\>b=0>
+      </itemize-minus>
+
+      <item>
+
+      <item><math|a<around*|(|b-c|)>=a<around*|(|b+<around*|(|-c|)>|)>=a b+
+      a<around*|(|-c|)>>
+
+      <\itemize-minus>
+        <item>Aca tendria que usar que: <math|-a=<around*|(|-1|)>*a>
+
+        <item><math|0=a+<around*|(|-a|)>=>
+      </itemize-minus>
+
+      \;
+    </enumerate-alpha>
 
     <item>
 
@@ -232,7 +391,21 @@
     <item>
 
     <\enumerate-alpha>
-      <item>
+      <item><math|<around*|\||x-3|\|>=c>
+
+      <\itemize-minus>
+        <item>Si <math|c\<less\>0> luego <math|<around*|\||x-3|\|>=c> da a
+        lugar al conjunto vacio.
+
+        <item><math|c=0> nos da como resultado: <math|x=3> solamente.
+
+        <item>Si <math|c\<gtr\>0\<Rightarrow\><around*|{|<tabular|<tformat|<table|<row|<cell|x-3=c>|<cell|si<space|1em>x-3\<geqslant\>0\<Leftrightarrow\>x\<geqslant\>3>>|<row|<cell|-x+3=c
+        >|<cell|si x-3\<less\>0\<Leftrightarrow\>x\<less\>3>>>>>|\<nobracket\>>>
+
+        <item><math|x-3=c\<Leftrightarrow\>x=c-3> ; como
+        <math|x\<geqslant\>3> esto tiene solucion solamente si,
+        <math|c-3\<geqslant\>3> (Por ejemplo)
+      </itemize-minus>
 
       <item>
 
@@ -258,6 +431,32 @@
     </enumerate-alpha>
 
     <item>
+
+    <\enumerate-alpha>
+      <item><math|<around*|\||x-y|\|>\<leqslant\><around*|\||x|\|>+<around*|\||y|\|>>
+
+      <\itemize-minus>
+        <item><math|<around*|\||x-y|\|>=<around*|\||x+<around*|(|-y|)>|\|>\<leqslant\><around*|\||x|\|>+<around*|\||<around*|(|-y|)>|\|>=<around*|\||x|\|>+<around*|\||y|\|>>
+      </itemize-minus>
+
+      <item><math|<around*|\||x|\|>-<around*|\||y|\|>\<leqslant\><around*|\||x-y|\|>>
+
+      <\itemize-minus>
+        <item><math|<around*|\||x|\|>=<around*|\||x+<around*|(|-y+y|)>|\|>=<around*|\||x-y+y|\|>\<leqslant\><around*|\||x-y|\|>+<around*|\||y|\|>\<Leftrightarrow\><around*|\||x|\|>-<around*|\||y|\|>\<leqslant\><around*|\||x-y|\|>>
+      </itemize-minus>
+
+      <item><math|<around*|\||x-y|\|>\<geqslant\><around*|\||<around*|\||x|\|>-<around*|\||y|\|>|\|>>
+
+      <\itemize-minus>
+        <item>Siguiendo el metodo hecho en <math|b> uno puede demostrar que:
+
+        <item><math|><math|<around*|\||x|\|>-<around*|\||y|\|>\<leqslant\><around*|\||x-y|\|>>
+        ; <math|<around*|\||y|\|>-<around*|\||x|\|>\<leqslant\><around*|\||y-x|\|>=<around*|\||x-y|\|>>
+        esto dice que: <math|<around*|\||x|\|>-<around*|\||y|\|>\<geqslant\>-<around*|\||x-y|\|>>
+
+        <item>Es decir: <math|-<around*|\||x-y|\|>\<leqslant\><around*|\||x|\|>-<around*|\||y|\|>\<leqslant\><around*|\||x-y|\|>\<Leftrightarrow\><around*|\||<around*|\||x|\|>-<around*|\||y|\|>|\|>\<leqslant\><around*|\||x-y|\|>>
+      </itemize-minus>
+    </enumerate-alpha>
 
     <item>Para hacer estos ejercicios utilizar:
 
@@ -354,6 +553,13 @@
         lo cual es un absurdo.\ 
       </itemize-minus>
     </enumerate-alpha>
+
+    <item>Probar que si A,B son dos subconjuntos acotados superiormente,
+    entonces, <math|A U B> esta acotado superiormente.
+
+    <\itemize-minus>
+      <item><math|>
+    </itemize-minus>
   </enumerate-numeric>
 </body>
 
@@ -366,6 +572,11 @@
 <\references>
   <\collection>
     <associate|auto-1|<tuple|1|1>>
+    <associate|auto-2|<tuple|1.1|?>>
+    <associate|auto-3|<tuple|1.2|?>>
+    <associate|auto-4|<tuple|1.3|?>>
+    <associate|auto-5|<tuple|1.4|?>>
+    <associate|auto-6|<tuple|2|?>>
   </collection>
 </references>
 
