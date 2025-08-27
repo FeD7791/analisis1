@@ -461,10 +461,10 @@
     <item>Para hacer estos ejercicios utilizar:
 
     <\itemize-minus>
-      <item>Si <math|A> esta acotado superiormente entonces
-      <math|\<exists\>\<alpha\>=max A> que es una cota superior, es decir
-      <math|a\<leqslant\>\<alpha\>\<forall\>a\<in\>A> y ademas
-      <math|\<alpha\>> cumple ser la menor de las cotas superiores.
+      <item>Si <math|A> esta acotado superiormente entonces es no vacio
+      <math|\<Rightarrow\>> <math|\<exists\>\<alpha\>=max A> que es una cota
+      superior, es decir <math|a\<leqslant\>\<alpha\>\<forall\>a\<in\>A> y
+      ademas <math|\<alpha\>> cumple ser la menor de las cotas superiores.
       <math|\<alpha\>> es unico
 
       <item>Si <math|A> esta acotado inferiormente entonces
@@ -552,6 +552,47 @@
         y <math|\<alpha\>-6K\<less\>6\<Leftrightarrow\>\<alpha\>\<less\>6<around*|(|K+1|)>\<in\>A>
         lo cual es un absurdo.\ 
       </itemize-minus>
+
+      <item><math|<around*|{|<frac|1|n>/n\<in\>\<bbb-Z\>,n\<neq\>0|}>>
+
+      <\itemize-minus>
+        <item>La propuesta es que: <math|-1\<leqslant\><frac|1|n>\<leqslant\>1>
+
+        <item>Como <math|1\<in\>A> a la vez que 1 es cota superior entonces 1
+        es el maximo.
+
+        <item>Por otro lado sabemos que -1 seria el minimo (mismo argumento)
+
+        <item>Otro tipo de demostracion se puede hacer de la siguiente forma,
+        y es utilizando el lema util:
+
+        <item>Si <math|\<alpha\>=sup A\<Rightarrow\>\<forall\>\<varepsilon\>\<gtr\>0,\<exists\>a\<in\>A/\<alpha\>-\<varepsilon\>\<less\>a\<leqslant\>\<alpha\>>
+
+        <item>Observemos que por arquimenidad:
+        <math|<frac|1|n>\<less\>\<varepsilon\>\<Leftrightarrow\>-\<varepsilon\>\<less\>-<frac|1|n>>
+        luego: <math|1-\<varepsilon\>\<less\>1-<frac|1|n>> , la pregunta que
+        resta responder es si <math|1-<frac|1|n>\<in\>A>, esto significa
+        poder expresar a este numero como <math|<frac|1|m>> con
+        <math|m\<in\>\<bbb-Z\>>.
+
+        <item><math|1-<frac|1|n>=<frac|n-1|n>>, bueno en este caso, en mi
+        opinion no puede asegurarse que <math|<frac|n-1|n>> no es de la forma
+        <math|<frac|1|n>>, pues esto implicaria:
+        <math|<frac|n-1|n>=<frac|1|<frac|n|n-1>>> lo cual implica asumir que
+        <math|m=<frac|n|n-1>\<in\>\<bbb-Z\>>. Es decir:
+        <math|n=m<around*|(|n-1|)>\<Leftrightarrow\>n<around*|(|1-m|)>-m=0>
+      </itemize-minus>
+
+      <item><math|A=<around*|{|3-<frac|1|n>,n\<in\>N|}>>
+
+      <\itemize-minus>
+        <item>Para este conjunto tenemos que si <math|a\<in\>A>:
+        <math|2\<less\>a\<leqslant\>3>
+
+        <item>3 es el maximo.
+
+        <item>Pero es 2 el infimo?\ 
+      </itemize-minus>
     </enumerate-alpha>
 
     <item>Probar que si A,B son dos subconjuntos acotados superiormente,
@@ -572,20 +613,40 @@
 <\references>
   <\collection>
     <associate|auto-1|<tuple|1|1>>
-    <associate|auto-2|<tuple|1.1|?>>
-    <associate|auto-3|<tuple|1.2|?>>
-    <associate|auto-4|<tuple|1.3|?>>
-    <associate|auto-5|<tuple|1.4|?>>
-    <associate|auto-6|<tuple|2|?>>
+    <associate|auto-2|<tuple|1.1|1>>
+    <associate|auto-3|<tuple|1.2|1>>
+    <associate|auto-4|<tuple|1.3|1>>
+    <associate|auto-5|<tuple|1.4|1>>
+    <associate|auto-6|<tuple|2|2>>
   </collection>
 </references>
 
 <\auxiliary>
   <\collection>
     <\associate|toc>
-      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|1<space|2spc>Problemas>
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|1<space|2spc>Teoria>
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-1><vspace|0.5fn>
+
+      <with|par-left|<quote|1tab>|1.1<space|2spc>Propiedades de Cuerpo
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-2>>
+
+      <with|par-left|<quote|1tab>|1.2<space|2spc>Propiedades de Orden
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-3>>
+
+      <with|par-left|<quote|1tab>|1.3<space|2spc>Valor absoluto
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-4>>
+
+      <with|par-left|<quote|1tab>|1.4<space|2spc>Propiedad del Supremo /
+      Infimo <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-5>>
+
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|2<space|2spc>Problemas>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-6><vspace|0.5fn>
     </associate>
   </collection>
 </auxiliary>
