@@ -5,10 +5,36 @@
 <\body>
   <doc-data|<doc-title|Practico 2>>
 
+  <section|Teoria>
+
+  <\definition>
+    Sea f:A<math|\<rightarrow\>>B, el conjunto A se denomina Dominio mientras
+    que B se denomina conjunto de llegada.
+  </definition>
+
+  <\definition>
+    Una funcion f:A<math|\<rightarrow\>>B se dice inyectiva si
+    <math|\<forall\>x,y\<in\>A,con x\<neq\>y> entonces
+    <math|f<around*|(|x|)>\<neq\>f<around*|(|y|)>>.Otra forma de verlo es que
+    <math|f<around*|(|x|)>=f<around*|(|y|)>\<Rightarrow\>x=y>
+  </definition>
+
+  <\definition>
+    Sea f:A<math|\<rightarrow\>>B, la imagen de <math|f> es:
+    <math|<around*|{|y\<in\>B/\<exists\>x\<in\>A/f<around*|(|x|)>=y|}>>
+  </definition>
+
+  <\definition>
+    Una funcion se dice suryectiva si la imagen de f es igual a B.
+  </definition>
+
+  \;
+
+  <section|Practico>
+
   <\enumerate-numeric>
     <item>
 
-<<<<<<< HEAD
     <item>
 
     <item>
@@ -215,8 +241,6 @@
       solo que debe excluir el 0 del dominio.
     </enumerate-alpha>
 
-    \;
-=======
     <item>El cubo tiene 6 caras, si el lado mide <math|l> entonces, cada cara
     tiene un area de <math|l<rsup|2>>, Por lo cual la superficie del cubo es:
     <math|s<around*|(|l|)>=6 l<rsup|2>>. El volumen de un cubo es:
@@ -341,7 +365,8 @@
         <item>Verdadero.
       </itemize-minus>
     </enumerate-alpha>
->>>>>>> 608536f (changes)
+  <|enumerate-numeric||||||>
+    608536f (changes)
   </enumerate-numeric>
 </body>
 
@@ -350,3 +375,10 @@
     <associate|page-medium|paper>
   </collection>
 </initial>
+
+<\references>
+  <\collection>
+    <associate|auto-1|<tuple|1|?>>
+    <associate|auto-2|<tuple|2|?>>
+  </collection>
+</references>
