@@ -171,7 +171,16 @@
 
     <item>
 
-    <item>
+    <item>El área de un rectángulo es de 4 m2 . Determinar las dimensiones
+    del rectángulo, sabiendo que si a la longitud de la base la incrementamos
+    en una unidad y a la altura la disminuimos en dos unidades, entonces el
+    área del nuevo rectángulo sigue siendo de <math|4 m<rsup|2>>
+
+    <\itemize-minus>
+      <item><math|h b=4m<rsup|2>> ; <math|<around*|(|b+1|)><around*|(|h-2|)>=4m<rsup|2>>
+
+      <item><math|h=<frac|4|b>\<Rightarrow\><around*|(|b+1|)><around*|(|<frac|4|b>-2|)>=4\<Leftrightarrow\>4-2b+<frac|4|b>-2=4\<Leftrightarrow\>2-b<rsup|2>+2=2b\<Leftrightarrow\>b<rsup|2>+2b-4=0>
+    </itemize-minus>
 
     <item>
 
@@ -209,9 +218,25 @@
         <math|-5-1\<less\>-1-5>
       </itemize-minus>
 
-      <item><math|d> falso
+      <item>El enunciado es falso, porque si <math|c=0> esto no se cumple (Se
+      dice que <math|c> es no negativo).
 
-      <item>
+      <item><math|\<forall\>x\<in\>\<bbb-R\>,\<exists\>y\<in\>\<bbb-R\>/x+y\<less\>0>
+
+      <\itemize-minus>
+        <item><math|\<forall\>x\<in\>\<bbb-R\>,\<exists\>-x\<in\>\<bbb-R\>/x+<around*|(|-x|)>=0>
+
+        <item>Por lo cual: <math|x+<around*|(|-x|)>-1=-1\<less\>0>
+
+        <item>Entones <math|y=-x-1>
+      </itemize-minus>
+
+      <item><math|\<forall\>x\<in\>\<bbb-R\>,\<exists\>y\<in\>\<bbb-R\>/x
+      y\<gtr\>0>
+
+      <\itemize-minus>
+        <item>No vale para <math|x=0>
+      </itemize-minus>
     </enumerate-alpha>
 
     <item>
@@ -240,6 +265,9 @@
         <item>Tenga en cuenta que <math|<around*|(|a-b|)><rsup|2>\<geqslant\>0>
 
         <item>Entonces: <math|<around*|(|a-b|)><rsup|2>+4a b\<geqslant\>4a b>
+
+        <item><math|a<rsup|2>- 2 a b+b<rsup|2>+4a b=a<rsup|2>+2 a
+        b+b<rsup|2>=<around*|(|a<rsup|2>+b<rsup|2>|)>>
 
         <item>Pero esto da: <math|<around*|(|a+b|)><rsup|2>\<geqslant\>4 a
         b\<Leftrightarrow\><sqrt|<around*|(|a+b|)><rsup|2>>\<geqslant\>2
@@ -308,6 +336,8 @@
     <\enumerate-alpha>
       <item><math|<around*|\||x|\|>=<around*|\||-x|\|>>
 
+      \;
+
       <\itemize-minus>
         <item>Si <math|x=0\<Rightarrow\>-x=-0=<around*|(|-1|)>\<cdummy\>0=0\<Rightarrow\><around*|\||0|\|>=0=<around*|\||-0|\|>=0>
 
@@ -371,12 +401,43 @@
         <item><math|x\<less\>-1<infix-or>x\<gtr\>1> y
         <math|x\<gtr\>0\<Rightarrow\>x\<gtr\>1\<Rightarrow\><around*|(|1,\<infty\>|)>>
       </enumerate-numeric>
+
+      <item><math|a-<around*|\||<around*|(|a-<around*|\||a|\|>|)>|\|>=?>
+
+      <\itemize-minus>
+        <item><math|a-<around*|\||<around*|(|a-<around*|\||a|\|>|)>|\|>=<around*|{|<tabular|<tformat|<table|<row|<cell|a-<around*|\||a-a|\|>>|<cell|si
+        a\<geqslant\>0>|<cell|\<Rightarrow\>a
+        >>|<row|<cell|a-<around*|\||a-<around*|(|-a|)>|\|> >|<cell|si
+        a\<less\>0>|<cell|<around*|{|<tabular|<tformat|<cwith|1|1|1|-1|color|red>|<table|<row|<cell|a-2
+        a>|<cell|si a\<geqslant\>0>>|<row|<cell|a-<around*|(|-2 a|)>=3a
+        >|<cell|si a\<less\>0>>>>>|\<nobracket\>>>>>>>|\<nobracket\>>>
+
+        <item>Otra forma:
+
+        <item><math|a-<around*|\||a-<around*|\||a|\|>|\|>=<around*|{|<tabular|<tformat|<table|<row|<cell|a-<around*|(|a-<around*|\||a|\|>|)>=<around*|\||a|\|>>|<cell|si<with|color|red|<around*|(|a-<around*|\||a|\|>|)>\<geqslant\>0>\<Rightarrow\><around*|\||a|\|>
+        si a\<geqslant\>0>|<cell|<tabular|<tformat|<table|<row|<cell|>>|<row|<cell|>>>>>>>|<row|<cell|a+<around*|(|a-<around*|\||a|\|>|)>=2a-<around*|\||a|\|>>|<cell|si
+        <around*|(|a-<around*|\||a|\|>|)>\<less\>0\<Rightarrow\>a\<less\>0>|<cell|>>>>>|\<nobracket\>>>
+
+        <item>Resultado final para ambos casos:
+
+        <\itemize-dot>
+          <item><math|a> si <math|a\<geqslant\>0>
+
+          <item>3a si a\<less\>0
+        </itemize-dot>
+
+        <item>Pruebe reemplazando numeros.
+      </itemize-minus>
     </enumerate-alpha>
 
     <item>
 
     <\enumerate-alpha>
-      <item><math|<around*|\||x-3|\|>\<less\>8>
+      <item><math|<around*|\||x-3|\|>\<less\>8\<Rightarrow\>-8\<less\>x-3\<less\>8\<Leftrightarrow\>-5\<less\>x\<less\>11>
+
+      <\itemize-minus>
+        <item><math|<around*|\||x-3|\|>>
+      </itemize-minus>
 
       <item><math|<around*|\||x-3|\|>\<geqslant\>8>
 
@@ -385,6 +446,10 @@
         si x-3\<geqslant\>0>>|<row|<cell|-<around*|(|x-3|)>\<geqslant\>8 si
         x-3\<less\>0\<Leftrightarrow\><around*|(|x-3|)>\<leqslant\>-8 si
         x-3\<less\>0>>>>>|\<nobracket\>>>
+
+        <item>Es decir: <math|<around*|{|<tabular|<tformat|<table|<row|<cell|x\<geqslant\>11>|<cell|si
+        x\<geqslant\>3>|<cell|x\<geqslant\>11>>|<row|<cell|x\<leqslant\>-5>|<cell|si
+        x\<less\>3>|<cell|\<Rightarrow\>x\<leqslant\>-5>>>>>|\<nobracket\>>>
       </itemize-minus>
     </enumerate-alpha>
 
@@ -407,7 +472,17 @@
         <math|c-3\<geqslant\>3> (Por ejemplo)
       </itemize-minus>
 
-      <item>
+      <item><math|<around*|\||x-1|\|> <around*|\||x+2|\|>=3>
+
+      <\itemize-minus>
+        <item><math|<around*|{|<tabular|<tformat|<table|<row|<cell|<around*|(|x-1|)><around*|(|x+2|)>>|<cell|si
+        x\<geqslant\>1 >|<cell|x\<geqslant\>-2>|<cell|\<Rightarrow\>x\<geqslant\>1>>|<row|<cell|<around*|(|x-1|)><around*|(|x+2|)>>|<cell|si
+        x\<less\>1>|<cell|x\<less\>-2>|<cell|\<Rightarrow\>x\<less\>-2>>|<row|<cell|-<around*|(|x-1|)><around*|(|x+2|)>>|<cell|si
+        x\<less\>1>|<cell|x\<geqslant\>-2>|<cell|\<Rightarrow\>-2\<leqslant\>x\<less\>1>>|<row|<cell|-<around*|(|x-1|)><around*|(|x+2|)>>|<cell|si
+        x\<geqslant\>1>|<cell|x\<less\>-2>|<cell|\<Rightarrow\>Vacio>>>>>|\<nobracket\>>>
+
+        El resultado vale en <math|\<bbb-R\>=<around*|(|-\<infty\>,-2|)>\<cup\><around*|[|-2,1|)>\<cup\><around*|[|1,\<infty\>|)>>
+      </itemize-minus>
 
       <item><math|<around*|\||x-1|\|>+<around*|\||x+2|\|>=3>
 
@@ -427,6 +502,8 @@
         solucion>>|<row|<cell|No hay solucion>>|<row|<cell|3=3,x es sol
         \<forall\>x\<in\><around*|[|-2,1|]>>>|<row|<cell|2x=-4\<Leftrightarrow\>x=-2\<Rightarrow\>no
         hay solucion>>>>>|\<nobracket\>>>
+
+        <item>Solucion valida en <math|\<bbb-R\>>
       </itemize-minus>
     </enumerate-alpha>
 
@@ -599,8 +676,125 @@
     entonces, <math|A U B> esta acotado superiormente.
 
     <\itemize-minus>
-      <item><math|>
+      <item>Si <math|A> esta acotado superiormente entonces existe
+      <math|\<alpha\>> que es el supremo de A, lo mismo ocurre con
+      <math|\<beta\>> y el infimo de B.
+
+      <item><math|a\<leqslant\>\<alpha\> \<forall\>a\<in\>A> mientras que
+      <math|b\<leqslant\>\<beta\> \<forall\>b\<in\>B>
+
+      <item>Por tricotomia: <math|\<alpha\>\<less\>\<beta\>> o bien
+      <math|a=\<beta\>> o bien <math|\<alpha\>\<gtr\>\<beta\>>
+
+      <item>En el caso <math|\<alpha\>\<neq\>\<beta\>> basta tomar el maximo
+      de estos dos, de manera que <math|a,b\<leqslant\>max<around*|(|\<alpha\>,\<beta\>|)>>
+
+      <item>En el caso <math|\<alpha\>=\<beta\>> tambien se cumple lo mismo.
     </itemize-minus>
+
+    <item>Considere <math|A,B> dos conjuntos no vacios de <math|\<bbb-R\>>.
+    tales que <math|x\<leqslant\>y> <math|\<forall\>x\<in\>A y
+    \<forall\>y\<in\>B>. Demostrar que:
+
+    <\enumerate-alpha>
+      <item><math|sup A\<leqslant\>b \<forall\>b\<in\>B>
+
+      <\itemize-minus>
+        <item>Como <math|x\<leqslant\>y> entonces <math|x> es una cota
+        inferior <math|\<forall\>y\<in\>B>. Por otro lado, puede pensar que
+        todo <math|y> es cota superior de <math|A>.
+
+        <item>Por tricotomia entonces: <math|sup A\<less\>y> o bien <math|sup
+        A\<gtr\>y> o bien <math|sup A=y>
+
+        <item>Si <math|sup A=y> entonces esto ya estaria demostrado.
+
+        <item>Si <math|sup A\<less\>y > tambien esto esta demostrado.
+
+        <item>Si\ 
+
+        <item><math|sup A\<gtr\>y> entonces <math|A> no es la cota superior
+        minima , en contradiccion a la definicion de supremo de <math|A>.
+      </itemize-minus>
+
+      <item>sup <math|A\<leqslant\>>inf <math|B>:
+
+      <\itemize-minus>
+        <item>Por tricotomia <math|sup A\<leqslant\>inf B>
+
+        <item>El caso complicado seria <math|sup A\<gtr\>inf B>
+
+        <item>Como <math|inf B\<leqslant\>y> debe cumplirse que existe
+        <math|y> tal que: <math|inf B\<leqslant\>y\<less\>sup A> puesto que
+        si se cumpliera <math|inf B\<less\>sup A\<leqslant\>y> luego
+        <math|inf B> no seria el infimo de B.
+
+        <item>Si estamos en el caso <math|y\<less\>sup A>, como
+        <math|x\<leqslant\>y \<forall\>x\<in\>A> luego incurririamos en un
+        absurdo.
+      </itemize-minus>
+    </enumerate-alpha>
+
+    <item>Determinar si los siguientes subconjuntos de <math|\<bbb-R\>> son
+    densos.
+
+    <\enumerate-alpha>
+      <item><math|<around*|{|x\<in\>\<bbb-R\>:x<rsup|3>\<less\>100|}>>
+
+      <\itemize-minus>
+        <item>La definicion de subconjunto dice que todo subconjunto de
+        <math|R> debe tener un elemento del conjunto en cuestion.
+
+        <item>Claramente <math|<around*|[|101,102|]>> no tiene elementos de
+        este conjutno, por lo cual el mismo no es denso.
+      </itemize-minus>
+
+      <item><math|\<bbb-R\>-\<bbb-Q\>>
+
+      <\itemize-minus>
+        <item>Este conjunto es <math|\<bbb-I\>> el cual si es denso.
+      </itemize-minus>
+
+      <item><math|\<bbb-R\>-<around*|(|0,10<rsup|-5>|)>>
+
+      <\itemize-minus>
+        <item>Claramente no es denso.
+      </itemize-minus>
+
+      <item><math|\<bbb-Q\>-\<bbb-Z\>>
+
+      <\itemize-minus>
+        <item>
+      </itemize-minus>
+    </enumerate-alpha>
+
+    <item>Decidir si las siguientes afirmaciones son verdaderas o falsas,
+    justificando su respuesta.
+
+    <item>Ejercicios Adicionales:
+
+    <\enumerate-alpha>
+      <item><math|<frac|2 x+1|<around*|\||x+2|\|>>\<gtr\>1>
+
+      <\itemize-minus>
+        <item><math|x\<neq\>-2> ; De otra forma la expresion no tiene
+        sentido.
+
+        <item><math|<frac|2x+1|<around*|\||x+2|\|>>\<gtr\>1\<Leftrightarrow\>2x+1\<gtr\><around*|\||x+2|\|>>
+        ; No cambia el sentido de la desigualdad al multiplicar por un numero
+        positivo (Ejecicio 5d)
+
+        <item><math|<around*|{|<tabular|<tformat|<table|<row|<cell|2x+1\<gtr\>x+2>|<cell|si
+        x+2\<gtr\>0>>|<row|<cell|2x+1\<gtr\>-<around*|(|x+2|)>>|<cell|si
+        x+2\<less\>0>>>>>|\<nobracket\>>>
+
+        <item><math|<around*|{|<tabular|<tformat|<table|<row|<cell|x\<gtr\>1>|<cell|si
+        x\<gtr\>-2>|<cell|\<Rightarrow\>>|<cell|x\<gtr\>1>>|<row|<cell|x\<gtr\>-1>|<cell|si
+        x\<less\>-2>|<cell|\<Rightarrow\>>|<cell|Vacio>>>>>|\<nobracket\>>>
+
+        <item>Pruebe con un ejemplo: <math|x=-3\<Rightarrow\><frac|-5|1>\<gtr\>1<around*|(|Falso|)>>
+      </itemize-minus>
+    </enumerate-alpha>
   </enumerate-numeric>
 </body>
 
@@ -616,7 +810,11 @@
     <associate|auto-2|<tuple|1.1|1>>
     <associate|auto-3|<tuple|1.2|1>>
     <associate|auto-4|<tuple|1.3|1>>
+<<<<<<< HEAD
     <associate|auto-5|<tuple|1.4|1>>
+=======
+    <associate|auto-5|<tuple|1.4|2>>
+>>>>>>> 4bcfbbe (changes)
     <associate|auto-6|<tuple|2|2>>
   </collection>
 </references>

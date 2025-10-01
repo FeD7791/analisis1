@@ -113,7 +113,25 @@
   <\enumerate-numeric>
     <item>
 
-    <item>
+    <item>Si <math|lim<rsub|n\<rightarrow\>\<infty\>>a<rsub|n>=l\<Rightarrow\>lim<rsub|n\<rightarrow\>\<infty\>><sqrt|a<rsub|n>>=<sqrt|l>>
+
+    <\itemize-minus>
+      <item>Si <math|n\<gtr\>N\<Rightarrow\><around*|\||a<rsub|n>-l|\|>\<less\>\<varepsilon\>>
+
+      <item>Partimos de <math|<around*|\||<sqrt|a<rsub|n>>-<sqrt|l>|\|>=<around*|\||<frac|a<rsub|n>-l|<sqrt|a<rsub|n>>+<sqrt|l>>|\|>>
+
+      <item>Si <math|l\<gtr\>0\<Rightarrow\><sqrt|a<rsub|n>>+<sqrt|l>\<geqslant\><sqrt|l>\<Leftrightarrow\><frac|1|<sqrt|a<rsub|n>>+<sqrt|l>>\<leqslant\><frac|1|<sqrt|l>>>
+
+      <item><math|<around*|\||<frac|a<rsub|n>-l|<sqrt|a<rsub|n>>+<sqrt|l>>|\|>\<leqslant\><frac|<around*|\||a<rsub|n>-l|\|>|<sqrt|l>>\<less\>\<varepsilon\>\<Leftrightarrow\><around*|\||a<rsub|n>-l|\|>=<sqrt|l>
+      \<varepsilon\>=\<varepsilon\><rprime|'>>
+
+      <item>De manera que para <math|l\<gtr\>0> aun se sigue cumpliendo el
+      limite.
+
+      <item>Si <math|l=0>
+
+      <item><math|<around*|\||<sqrt|a<rsub|n>>|\|>\<leqslant\><sqrt|<around*|\||a<rsub|n>|\|>>\<less\>\<varepsilon\>\<Leftrightarrow\><around*|\||a<rsub|n>|\|>\<less\>\<varepsilon\><rsup|2>=\<varepsilon\><rprime|'>>
+    </itemize-minus>
 
     <item>
 
@@ -123,7 +141,37 @@
 
     <item>
 
-    <item>Esta sucesion esta definida inductivamente como:\ 
+    <item><math|a<rsub|1>=3>, <math|a<rsub|n+1>=<sqrt|2 a<rsub|n>>> show
+    that: <math|lim<rsub|n\<rightarrow\>\<infty\>>a<rsub|n>=2> ; suggestion:
+    show that the sequence is decreasing and bounded below.
+
+    <\itemize-minus>
+      <item><math|a<rsub|1>=3> como <math|a<rsub|n+1>=<sqrt|2
+      a<rsub|n>>\<gtr\>0 \<forall\>n>
+
+      <item>Si <math|a<rsub|n>\<geqslant\>2\<Rightarrow\>2\<cdummy\>a<rsub|n>\<geqslant\>2\<cdummy\>2\<Rightarrow\><sqrt|2
+      a<rsub|n>>\<geqslant\>2> de manera que
+      <math|\<forall\>n,a<rsub|n>\<gtr\>2>
+
+      <item>Queremos probar que: <math|a<rsub|n+1>\<leqslant\>a<rsub|n>> esto
+      se cumple si y solo si: <math|<sqrt|2
+      a<rsub|n>>\<leqslant\>a<rsub|n>\<Leftrightarrow\>2
+      a<rsub|n>\<leqslant\>a<rsub|n><rsup|2>\<Leftrightarrow\>0\<leqslant\>2a<rsub|n>-a<rsup|2><rsub|n>\<Leftrightarrow\>a<rsub|n><around*|(|2-a<rsub|n>|)>>
+      lo cual se cumple pues <math|a<rsub|n>\<gtr\>2>
+
+      <item>Como la sucesion es monotona decreciente, entonces:
+      <math|lim<rsub|n\<rightarrow\>\<infty\>>a<rsub|n>=L>
+
+      <item>Por la recurrencia tenemos: <math|lim<rsub|n\<rightarrow\>\<infty\>>a<rsub|n+1>=lim<rsub|n\<rightarrow\>\<infty\>><sqrt|2
+      a<rsub|n>>=<sqrt|2 L>>
+
+      <item>En consecuencia: <math|L=<sqrt|2
+      L>\<Leftrightarrow\>L<rsup|2>-2L=0\<Leftrightarrow\>L<around*|(|L-2|)>\<Rightarrow\>L=0>
+      o <math|L=2>
+
+      <item>Sin embargo <math|a<rsub|n>\<geqslant\>2> entonces el limite es
+      2.
+    </itemize-minus>
 
     <item>Demostrar con subsucesiones que elsiguiente limite no existe:
     <math|lim<rsub|n\<rightarrow\>\<infty\>><around*|(|<frac|2n|n+\<pi\>>+cos<around*|(|n
