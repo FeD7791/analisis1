@@ -443,25 +443,46 @@
 
     <item>
 
-    <item>Deducir que <math|sen<around*|(|x|)>\<less\>x> ;\ 
+    <item>Probar que <math|<around*|\||sen a-sen
+    b|\|>\<leqslant\><around*|\||a-b|\|>>
+    <math|\<forall\>a,b\<in\>\<bbb-R\>>. Deducir que
+    <math|sen<around*|(|x|)>\<less\>x> ;\ 
 
     <\itemize-minus>
-      <item>Vamos a usar el resultado del ejercicio 10
+      <item>Si consideramos el intervalo <math|<around*|[|a,b|]>> veremos que
+      la funcion sen(x) es continua alli y aun mas es derivable en el abierto
+      <math|<around*|(|a,b|)>>. Entonces puede utilizar el teorema del valor
+      medio:
 
-      <item><math|f<around*|(|x|)>=x> ; <math|g<around*|(|x|)>=sen<around*|(|x|)>>
+      <\equation*>
+        <frac|sen a-sen b|a-b>=cos<around*|(|c|)>
+      </equation*>
 
-      <item><math|f<around*|(|0|)>=g<around*|(|0|)>=0>
+      <item>Donde <math|a\<less\>c\<less\>b>. Si ahora despejamos y tomamos
+      el modulo:
 
-      <item><math|f<rprime|'><around*|(|x|)>=1> ;
-      <math|g<rprime|'><around*|(|x|)>=cos<around*|(|x|)>> ;
-      <math|f<rprime|'><around*|(|x|)>\<geqslant\>cos<around*|(|x|)>>\ 
+      <\equation*>
+        <around*|\||sen a-sen b|\|>=<around*|\||a-b|\|>
+        <around*|\||cos<around*|(|c|)>|\|>\<leqslant\><around*|\||a-b|\|>
+      </equation*>
+
+      <item>Donde con este ultimo resultado ya hemos probado lo que se
+      queria. Si consideramos <math|b=0> por ejemplo tendriamos:
+
+      <math|<around*|\||sen a|\|>\<leqslant\><around*|\||a|\|>>
+
+      <item>Si en particular <math|a\<gtr\>0> luego tendremos que: <math|sen
+      a\<leqslant\><around*|\||sen a|\|>\<leqslant\>a> que es lo ultimo que
+      queriamos demostrar.
     </itemize-minus>
 
     <item>Sean <math|f,g:I\<rightarrow\>\<bbb-R\>> derivables en todo punto
     del intervalo abierto I.
 
     <\enumerate-alpha>
-      <item>Si <math|f<rprime|'><around*|(|x|)>\<gtr\>g<rprime|'><around*|(|x|)>\<forall\>x\<in\>I\<wedge\>f<around*|(|a|)>=g<around*|(|a|)>\<Rightarrow\>f<around*|(|x|)>\<gtr\>g<around*|(|x|)>>\ 
+      <item>Si <math|f<rprime|'><around*|(|x|)>\<gtr\>g<rprime|'><around*|(|x|)>\<forall\>x\<in\>I\<wedge\>f<around*|(|a|)>=g<around*|(|a|)>\<Rightarrow\>f<around*|(|x|)>\<gtr\>g<around*|(|x|)>>
+      <math|si x\<gtr\>a> y <math|f<around*|(|x|)>\<less\>g<around*|(|x|)>>
+      si <math|x\<less\>a>.
 
       <\itemize-minus>
         <item><math|h<around*|(|x|)>=f<around*|(|x|)>-g<around*|(|x|)>\<Rightarrow\>h<around*|(|x|)>>
@@ -471,6 +492,24 @@
 
         <item>Como <math|h<around*|(|a|)>=0> luego
         <math|h<around*|(|x|)>\<gtr\>0> <math|\<forall\>x\<gtr\>a\<Rightarrow\>f<around*|(|x|)>\<gtr\>g<around*|(|x|)>\<forall\>x\<gtr\>a/x\<in\>I>
+
+        <item>
+      </itemize-minus>
+
+      <item>Demostrar que no se cumple lo anterior si no se supone que
+      <math|f<around*|(|a|)>=g<around*|(|a|)>>
+
+      <\itemize-minus>
+        <item>Si lo anterior no sucede, entonces tiene que considerar
+        tricotomia:
+
+        <math|h<around*|(|a|)>\<gtr\>0> o bien
+        <math|h<around*|(|a|)>\<less\>0>
+
+        <item>Contraejemplos <math|f<around*|(|x|)>=0> y
+        <math|g<around*|(|x|)>=-x>. Claramente
+        <math|f<rprime|'><around*|(|x|)>\<gtr\>g<rprime|'><around*|(|x|)>>,
+        en consecuencia si estamos considerando un\ 
       </itemize-minus>
     </enumerate-alpha>
 
@@ -532,7 +571,7 @@
     <associate|auto-4|<tuple|1|2>>
     <associate|auto-5|<tuple|1.3|3>>
     <associate|auto-6|<tuple|1.4|3>>
-    <associate|auto-7|<tuple|2|3>>
+    <associate|auto-7|<tuple|2|4>>
   </collection>
 </references>
 
